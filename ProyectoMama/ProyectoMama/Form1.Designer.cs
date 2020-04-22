@@ -29,24 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panel_menuTop = new System.Windows.Forms.Panel();
-            this.picb_minimizar = new System.Windows.Forms.PictureBox();
-            this.picb__salir = new System.Windows.Forms.PictureBox();
             this.lbl_dashboard = new System.Windows.Forms.Label();
             this.picb_dashboard = new System.Windows.Forms.PictureBox();
             this.panel_sidebarWrapper = new System.Windows.Forms.Panel();
             this.panel_sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_agregarEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.separator_sidebar2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btn_verEmpleadores = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_editarEmpleador = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_agregarEmpleador = new Bunifu.Framework.UI.BunifuFlatButton();
             this.separator_sideBar1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lbl_formum = new System.Windows.Forms.Label();
             this.pcb_formum = new System.Windows.Forms.PictureBox();
@@ -54,13 +46,32 @@
             this.Elipse_CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.transition_sidebarCerrar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.transition_sidebarAbrir = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.btn_Empleadores = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel_menuEmpleadores = new System.Windows.Forms.Panel();
+            this.btn_agregarEmpleador = new System.Windows.Forms.Button();
+            this.btn_editarEmpleador = new System.Windows.Forms.Button();
+            this.btn_listarEmpleador = new System.Windows.Forms.Button();
+            this.panel_logo = new System.Windows.Forms.Panel();
+            this.panel_btnEmpladores = new System.Windows.Forms.Panel();
+            this.panel_empleados = new System.Windows.Forms.Panel();
+            this.btn_Empleados = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel_menuEmpleados = new System.Windows.Forms.Panel();
+            this.btn_listarEmpleados = new System.Windows.Forms.Button();
+            this.btn_editarEmpleados = new System.Windows.Forms.Button();
+            this.btn_agregarEmpleados = new System.Windows.Forms.Button();
+            this.salir = new System.Windows.Forms.Button();
+            this.minimizar = new System.Windows.Forms.Button();
             this.panel_menuTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_minimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb__salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).BeginInit();
             this.panel_sidebarWrapper.SuspendLayout();
             this.panel_sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_formum)).BeginInit();
+            this.panel_central.SuspendLayout();
+            this.panel_menuEmpleadores.SuspendLayout();
+            this.panel_logo.SuspendLayout();
+            this.panel_btnEmpladores.SuspendLayout();
+            this.panel_empleados.SuspendLayout();
+            this.panel_menuEmpleados.SuspendLayout();
             this.SuspendLayout();
             // 
             // doubleBitmapControl1
@@ -77,8 +88,8 @@
             // panel_menuTop
             // 
             this.panel_menuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.panel_menuTop.Controls.Add(this.picb_minimizar);
-            this.panel_menuTop.Controls.Add(this.picb__salir);
+            this.panel_menuTop.Controls.Add(this.minimizar);
+            this.panel_menuTop.Controls.Add(this.salir);
             this.panel_menuTop.Controls.Add(this.lbl_dashboard);
             this.panel_menuTop.Controls.Add(this.picb_dashboard);
             this.transition_sidebarAbrir.SetDecoration(this.panel_menuTop, BunifuAnimatorNS.DecorationType.None);
@@ -88,34 +99,6 @@
             this.panel_menuTop.Name = "panel_menuTop";
             this.panel_menuTop.Size = new System.Drawing.Size(984, 80);
             this.panel_menuTop.TabIndex = 1;
-            // 
-            // picb_minimizar
-            // 
-            this.picb_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.transition_sidebarCerrar.SetDecoration(this.picb_minimizar, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.picb_minimizar, BunifuAnimatorNS.DecorationType.None);
-            this.picb_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("picb_minimizar.Image")));
-            this.picb_minimizar.Location = new System.Drawing.Point(897, 25);
-            this.picb_minimizar.Name = "picb_minimizar";
-            this.picb_minimizar.Size = new System.Drawing.Size(30, 30);
-            this.picb_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picb_minimizar.TabIndex = 4;
-            this.picb_minimizar.TabStop = false;
-            this.picb_minimizar.Click += new System.EventHandler(this.Picb_minimizar_Click);
-            // 
-            // picb__salir
-            // 
-            this.picb__salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.transition_sidebarCerrar.SetDecoration(this.picb__salir, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.picb__salir, BunifuAnimatorNS.DecorationType.None);
-            this.picb__salir.Image = ((System.Drawing.Image)(resources.GetObject("picb__salir.Image")));
-            this.picb__salir.Location = new System.Drawing.Point(933, 25);
-            this.picb__salir.Name = "picb__salir";
-            this.picb__salir.Size = new System.Drawing.Size(30, 30);
-            this.picb__salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picb__salir.TabIndex = 2;
-            this.picb__salir.TabStop = false;
-            this.picb__salir.Click += new System.EventHandler(this.Picb__salir_Click);
             // 
             // lbl_dashboard
             // 
@@ -159,16 +142,11 @@
             // 
             this.panel_sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_sidebar.BackgroundImage")));
             this.panel_sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_sidebar.Controls.Add(this.bunifuFlatButton2);
-            this.panel_sidebar.Controls.Add(this.bunifuFlatButton1);
-            this.panel_sidebar.Controls.Add(this.btn_agregarEmpleado);
-            this.panel_sidebar.Controls.Add(this.separator_sidebar2);
-            this.panel_sidebar.Controls.Add(this.btn_verEmpleadores);
-            this.panel_sidebar.Controls.Add(this.btn_editarEmpleador);
-            this.panel_sidebar.Controls.Add(this.btn_agregarEmpleador);
-            this.panel_sidebar.Controls.Add(this.separator_sideBar1);
-            this.panel_sidebar.Controls.Add(this.lbl_formum);
-            this.panel_sidebar.Controls.Add(this.pcb_formum);
+            this.panel_sidebar.Controls.Add(this.panel_menuEmpleados);
+            this.panel_sidebar.Controls.Add(this.panel_empleados);
+            this.panel_sidebar.Controls.Add(this.panel_btnEmpladores);
+            this.panel_sidebar.Controls.Add(this.panel_menuEmpleadores);
+            this.panel_sidebar.Controls.Add(this.panel_logo);
             this.transition_sidebarAbrir.SetDecoration(this.panel_sidebar, BunifuAnimatorNS.DecorationType.None);
             this.transition_sidebarCerrar.SetDecoration(this.panel_sidebar, BunifuAnimatorNS.DecorationType.None);
             this.panel_sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
@@ -181,114 +159,6 @@
             this.panel_sidebar.Size = new System.Drawing.Size(220, 554);
             this.panel_sidebar.TabIndex = 0;
             // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "      Ver Empleados";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transition_sidebarCerrar.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 70D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(10, 343);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(206, 48);
-            this.bunifuFlatButton2.TabIndex = 14;
-            this.bunifuFlatButton2.Text = "      Ver Empleados";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "      Editar Empleado";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transition_sidebarCerrar.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 70D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(10, 289);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(206, 48);
-            this.bunifuFlatButton1.TabIndex = 13;
-            this.bunifuFlatButton1.Text = "      Editar Empleado";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btn_agregarEmpleado
-            // 
-            this.btn_agregarEmpleado.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_agregarEmpleado.BorderRadius = 0;
-            this.btn_agregarEmpleado.ButtonText = "      Agregar Empleado";
-            this.btn_agregarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transition_sidebarCerrar.SetDecoration(this.btn_agregarEmpleado, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.btn_agregarEmpleado, BunifuAnimatorNS.DecorationType.None);
-            this.btn_agregarEmpleado.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_agregarEmpleado.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleado.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_agregarEmpleado.Iconimage")));
-            this.btn_agregarEmpleado.Iconimage_right = null;
-            this.btn_agregarEmpleado.Iconimage_right_Selected = null;
-            this.btn_agregarEmpleado.Iconimage_Selected = null;
-            this.btn_agregarEmpleado.IconMarginLeft = 0;
-            this.btn_agregarEmpleado.IconMarginRight = 0;
-            this.btn_agregarEmpleado.IconRightVisible = true;
-            this.btn_agregarEmpleado.IconRightZoom = 0D;
-            this.btn_agregarEmpleado.IconVisible = true;
-            this.btn_agregarEmpleado.IconZoom = 70D;
-            this.btn_agregarEmpleado.IsTab = false;
-            this.btn_agregarEmpleado.Location = new System.Drawing.Point(10, 235);
-            this.btn_agregarEmpleado.Name = "btn_agregarEmpleado";
-            this.btn_agregarEmpleado.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleado.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleado.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_agregarEmpleado.selected = false;
-            this.btn_agregarEmpleado.Size = new System.Drawing.Size(206, 48);
-            this.btn_agregarEmpleado.TabIndex = 12;
-            this.btn_agregarEmpleado.Text = "      Agregar Empleado";
-            this.btn_agregarEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregarEmpleado.Textcolor = System.Drawing.Color.White;
-            this.btn_agregarEmpleado.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // separator_sidebar2
             // 
             this.separator_sidebar2.BackColor = System.Drawing.Color.Transparent;
@@ -296,120 +166,12 @@
             this.transition_sidebarCerrar.SetDecoration(this.separator_sidebar2, BunifuAnimatorNS.DecorationType.None);
             this.separator_sidebar2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.separator_sidebar2.LineThickness = 1;
-            this.separator_sidebar2.Location = new System.Drawing.Point(7, 228);
+            this.separator_sidebar2.Location = new System.Drawing.Point(266, 385);
             this.separator_sidebar2.Name = "separator_sidebar2";
-            this.separator_sidebar2.Size = new System.Drawing.Size(206, 1);
+            this.separator_sidebar2.Size = new System.Drawing.Size(206, 10);
             this.separator_sidebar2.TabIndex = 11;
             this.separator_sidebar2.Transparency = 255;
             this.separator_sidebar2.Vertical = false;
-            // 
-            // btn_verEmpleadores
-            // 
-            this.btn_verEmpleadores.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_verEmpleadores.BackColor = System.Drawing.Color.Transparent;
-            this.btn_verEmpleadores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_verEmpleadores.BorderRadius = 0;
-            this.btn_verEmpleadores.ButtonText = "      Ver Empleadores";
-            this.btn_verEmpleadores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transition_sidebarCerrar.SetDecoration(this.btn_verEmpleadores, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.btn_verEmpleadores, BunifuAnimatorNS.DecorationType.None);
-            this.btn_verEmpleadores.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_verEmpleadores.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_verEmpleadores.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_verEmpleadores.Iconimage")));
-            this.btn_verEmpleadores.Iconimage_right = null;
-            this.btn_verEmpleadores.Iconimage_right_Selected = null;
-            this.btn_verEmpleadores.Iconimage_Selected = null;
-            this.btn_verEmpleadores.IconMarginLeft = 0;
-            this.btn_verEmpleadores.IconMarginRight = 0;
-            this.btn_verEmpleadores.IconRightVisible = true;
-            this.btn_verEmpleadores.IconRightZoom = 0D;
-            this.btn_verEmpleadores.IconVisible = true;
-            this.btn_verEmpleadores.IconZoom = 70D;
-            this.btn_verEmpleadores.IsTab = false;
-            this.btn_verEmpleadores.Location = new System.Drawing.Point(9, 170);
-            this.btn_verEmpleadores.Name = "btn_verEmpleadores";
-            this.btn_verEmpleadores.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_verEmpleadores.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_verEmpleadores.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_verEmpleadores.selected = false;
-            this.btn_verEmpleadores.Size = new System.Drawing.Size(206, 48);
-            this.btn_verEmpleadores.TabIndex = 10;
-            this.btn_verEmpleadores.Text = "      Ver Empleadores";
-            this.btn_verEmpleadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_verEmpleadores.Textcolor = System.Drawing.Color.White;
-            this.btn_verEmpleadores.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btn_editarEmpleador
-            // 
-            this.btn_editarEmpleador.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_editarEmpleador.BackColor = System.Drawing.Color.Transparent;
-            this.btn_editarEmpleador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_editarEmpleador.BorderRadius = 0;
-            this.btn_editarEmpleador.ButtonText = "      Editar Empleador";
-            this.btn_editarEmpleador.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transition_sidebarCerrar.SetDecoration(this.btn_editarEmpleador, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.btn_editarEmpleador, BunifuAnimatorNS.DecorationType.None);
-            this.btn_editarEmpleador.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_editarEmpleador.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_editarEmpleador.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_editarEmpleador.Iconimage")));
-            this.btn_editarEmpleador.Iconimage_right = null;
-            this.btn_editarEmpleador.Iconimage_right_Selected = null;
-            this.btn_editarEmpleador.Iconimage_Selected = null;
-            this.btn_editarEmpleador.IconMarginLeft = 0;
-            this.btn_editarEmpleador.IconMarginRight = 0;
-            this.btn_editarEmpleador.IconRightVisible = true;
-            this.btn_editarEmpleador.IconRightZoom = 0D;
-            this.btn_editarEmpleador.IconVisible = true;
-            this.btn_editarEmpleador.IconZoom = 70D;
-            this.btn_editarEmpleador.IsTab = false;
-            this.btn_editarEmpleador.Location = new System.Drawing.Point(9, 116);
-            this.btn_editarEmpleador.Name = "btn_editarEmpleador";
-            this.btn_editarEmpleador.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_editarEmpleador.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_editarEmpleador.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_editarEmpleador.selected = false;
-            this.btn_editarEmpleador.Size = new System.Drawing.Size(206, 48);
-            this.btn_editarEmpleador.TabIndex = 9;
-            this.btn_editarEmpleador.Text = "      Editar Empleador";
-            this.btn_editarEmpleador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_editarEmpleador.Textcolor = System.Drawing.Color.White;
-            this.btn_editarEmpleador.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btn_agregarEmpleador
-            // 
-            this.btn_agregarEmpleador.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleador.BackColor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_agregarEmpleador.BorderRadius = 0;
-            this.btn_agregarEmpleador.ButtonText = "      Agregar Empleador";
-            this.btn_agregarEmpleador.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transition_sidebarCerrar.SetDecoration(this.btn_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.btn_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
-            this.btn_agregarEmpleador.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_agregarEmpleador.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleador.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_agregarEmpleador.Iconimage")));
-            this.btn_agregarEmpleador.Iconimage_right = null;
-            this.btn_agregarEmpleador.Iconimage_right_Selected = null;
-            this.btn_agregarEmpleador.Iconimage_Selected = null;
-            this.btn_agregarEmpleador.IconMarginLeft = 0;
-            this.btn_agregarEmpleador.IconMarginRight = 0;
-            this.btn_agregarEmpleador.IconRightVisible = true;
-            this.btn_agregarEmpleador.IconRightZoom = 0D;
-            this.btn_agregarEmpleador.IconVisible = true;
-            this.btn_agregarEmpleador.IconZoom = 70D;
-            this.btn_agregarEmpleador.IsTab = false;
-            this.btn_agregarEmpleador.Location = new System.Drawing.Point(9, 62);
-            this.btn_agregarEmpleador.Name = "btn_agregarEmpleador";
-            this.btn_agregarEmpleador.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleador.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btn_agregarEmpleador.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_agregarEmpleador.selected = false;
-            this.btn_agregarEmpleador.Size = new System.Drawing.Size(206, 48);
-            this.btn_agregarEmpleador.TabIndex = 8;
-            this.btn_agregarEmpleador.Text = "      Agregar Empleador";
-            this.btn_agregarEmpleador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregarEmpleador.Textcolor = System.Drawing.Color.White;
-            this.btn_agregarEmpleador.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // separator_sideBar1
             // 
@@ -418,7 +180,7 @@
             this.transition_sidebarCerrar.SetDecoration(this.separator_sideBar1, BunifuAnimatorNS.DecorationType.None);
             this.separator_sideBar1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.separator_sideBar1.LineThickness = 1;
-            this.separator_sideBar1.Location = new System.Drawing.Point(6, 55);
+            this.separator_sideBar1.Location = new System.Drawing.Point(7, 54);
             this.separator_sideBar1.Name = "separator_sideBar1";
             this.separator_sideBar1.Size = new System.Drawing.Size(206, 1);
             this.separator_sideBar1.TabIndex = 7;
@@ -433,7 +195,7 @@
             this.transition_sidebarAbrir.SetDecoration(this.lbl_formum, BunifuAnimatorNS.DecorationType.None);
             this.lbl_formum.Font = new System.Drawing.Font("Poppins", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_formum.ForeColor = System.Drawing.Color.White;
-            this.lbl_formum.Location = new System.Drawing.Point(69, 15);
+            this.lbl_formum.Location = new System.Drawing.Point(70, 14);
             this.lbl_formum.Name = "lbl_formum";
             this.lbl_formum.Size = new System.Drawing.Size(84, 28);
             this.lbl_formum.TabIndex = 6;
@@ -445,7 +207,7 @@
             this.transition_sidebarCerrar.SetDecoration(this.pcb_formum, BunifuAnimatorNS.DecorationType.None);
             this.transition_sidebarAbrir.SetDecoration(this.pcb_formum, BunifuAnimatorNS.DecorationType.None);
             this.pcb_formum.Image = ((System.Drawing.Image)(resources.GetObject("pcb_formum.Image")));
-            this.pcb_formum.Location = new System.Drawing.Point(17, 13);
+            this.pcb_formum.Location = new System.Drawing.Point(18, 12);
             this.pcb_formum.Name = "pcb_formum";
             this.pcb_formum.Size = new System.Drawing.Size(30, 30);
             this.pcb_formum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -455,6 +217,7 @@
             // panel_central
             // 
             this.panel_central.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.panel_central.Controls.Add(this.separator_sidebar2);
             this.transition_sidebarAbrir.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
             this.transition_sidebarCerrar.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
             this.panel_central.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -472,28 +235,6 @@
             // 
             this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transition_sidebarCerrar.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 1F;
-            this.transition_sidebarCerrar.DefaultAnimation = animation3;
-            this.transition_sidebarCerrar.Interval = 15;
-            // 
-            // transition_sidebarAbrir
-            // 
-            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.transition_sidebarAbrir.Cursor = null;
             animation4.AnimateOnlyDifferences = true;
             animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
             animation4.LeafCoeff = 0F;
@@ -508,9 +249,322 @@
             animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
             animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
             animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.transition_sidebarAbrir.DefaultAnimation = animation4;
+            animation4.TransparencyCoeff = 1F;
+            this.transition_sidebarCerrar.DefaultAnimation = animation4;
+            this.transition_sidebarCerrar.Interval = 15;
+            // 
+            // transition_sidebarAbrir
+            // 
+            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transition_sidebarAbrir.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.transition_sidebarAbrir.DefaultAnimation = animation3;
             this.transition_sidebarAbrir.Interval = 15;
+            // 
+            // btn_Empleadores
+            // 
+            this.btn_Empleadores.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Empleadores.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Empleadores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Empleadores.BorderRadius = 0;
+            this.btn_Empleadores.ButtonText = "      Empleadores";
+            this.btn_Empleadores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_Empleadores, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_Empleadores, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Empleadores.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Empleadores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Empleadores.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Empleadores.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Empleadores.Iconimage")));
+            this.btn_Empleadores.Iconimage_right = null;
+            this.btn_Empleadores.Iconimage_right_Selected = null;
+            this.btn_Empleadores.Iconimage_Selected = null;
+            this.btn_Empleadores.IconMarginLeft = 0;
+            this.btn_Empleadores.IconMarginRight = 0;
+            this.btn_Empleadores.IconRightVisible = true;
+            this.btn_Empleadores.IconRightZoom = 0D;
+            this.btn_Empleadores.IconVisible = true;
+            this.btn_Empleadores.IconZoom = 70D;
+            this.btn_Empleadores.IsTab = false;
+            this.btn_Empleadores.Location = new System.Drawing.Point(0, 0);
+            this.btn_Empleadores.Name = "btn_Empleadores";
+            this.btn_Empleadores.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Empleadores.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btn_Empleadores.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Empleadores.selected = false;
+            this.btn_Empleadores.Size = new System.Drawing.Size(206, 48);
+            this.btn_Empleadores.TabIndex = 15;
+            this.btn_Empleadores.Text = "      Empleadores";
+            this.btn_Empleadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Empleadores.Textcolor = System.Drawing.Color.White;
+            this.btn_Empleadores.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Empleadores.Click += new System.EventHandler(this.Btn_Empleadores_Click);
+            // 
+            // panel_menuEmpleadores
+            // 
+            this.panel_menuEmpleadores.BackColor = System.Drawing.Color.Transparent;
+            this.panel_menuEmpleadores.Controls.Add(this.btn_listarEmpleador);
+            this.panel_menuEmpleadores.Controls.Add(this.btn_editarEmpleador);
+            this.panel_menuEmpleadores.Controls.Add(this.btn_agregarEmpleador);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_menuEmpleadores, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_menuEmpleadores, BunifuAnimatorNS.DecorationType.None);
+            this.panel_menuEmpleadores.Location = new System.Drawing.Point(6, 146);
+            this.panel_menuEmpleadores.Name = "panel_menuEmpleadores";
+            this.panel_menuEmpleadores.Size = new System.Drawing.Size(206, 147);
+            this.panel_menuEmpleadores.TabIndex = 16;
+            // 
+            // btn_agregarEmpleador
+            // 
+            this.btn_agregarEmpleador.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.btn_agregarEmpleador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_agregarEmpleador.FlatAppearance.BorderSize = 0;
+            this.btn_agregarEmpleador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_agregarEmpleador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_agregarEmpleador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agregarEmpleador.Font = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregarEmpleador.ForeColor = System.Drawing.Color.White;
+            this.btn_agregarEmpleador.Location = new System.Drawing.Point(0, 0);
+            this.btn_agregarEmpleador.Name = "btn_agregarEmpleador";
+            this.btn_agregarEmpleador.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btn_agregarEmpleador.Size = new System.Drawing.Size(206, 45);
+            this.btn_agregarEmpleador.TabIndex = 12;
+            this.btn_agregarEmpleador.Text = "AGREGAR";
+            this.btn_agregarEmpleador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agregarEmpleador.UseVisualStyleBackColor = false;
+            // 
+            // btn_editarEmpleador
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.btn_editarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_editarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.btn_editarEmpleador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_editarEmpleador.FlatAppearance.BorderSize = 0;
+            this.btn_editarEmpleador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_editarEmpleador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_editarEmpleador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_editarEmpleador.Font = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editarEmpleador.ForeColor = System.Drawing.Color.White;
+            this.btn_editarEmpleador.Location = new System.Drawing.Point(0, 45);
+            this.btn_editarEmpleador.Name = "btn_editarEmpleador";
+            this.btn_editarEmpleador.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btn_editarEmpleador.Size = new System.Drawing.Size(206, 45);
+            this.btn_editarEmpleador.TabIndex = 13;
+            this.btn_editarEmpleador.Text = "EDITAR";
+            this.btn_editarEmpleador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_editarEmpleador.UseVisualStyleBackColor = true;
+            // 
+            // btn_listarEmpleador
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.btn_listarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_listarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.btn_listarEmpleador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_listarEmpleador.FlatAppearance.BorderSize = 0;
+            this.btn_listarEmpleador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_listarEmpleador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_listarEmpleador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_listarEmpleador.Font = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_listarEmpleador.ForeColor = System.Drawing.Color.White;
+            this.btn_listarEmpleador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_listarEmpleador.ImageKey = "(ninguno)";
+            this.btn_listarEmpleador.Location = new System.Drawing.Point(0, 90);
+            this.btn_listarEmpleador.Name = "btn_listarEmpleador";
+            this.btn_listarEmpleador.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btn_listarEmpleador.Size = new System.Drawing.Size(206, 45);
+            this.btn_listarEmpleador.TabIndex = 14;
+            this.btn_listarEmpleador.Text = "LISTAR";
+            this.btn_listarEmpleador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_listarEmpleador.UseVisualStyleBackColor = true;
+            // 
+            // panel_logo
+            // 
+            this.panel_logo.BackColor = System.Drawing.Color.Transparent;
+            this.panel_logo.Controls.Add(this.pcb_formum);
+            this.panel_logo.Controls.Add(this.separator_sideBar1);
+            this.panel_logo.Controls.Add(this.lbl_formum);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_logo, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_logo, BunifuAnimatorNS.DecorationType.None);
+            this.panel_logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_logo.Location = new System.Drawing.Point(0, 0);
+            this.panel_logo.Name = "panel_logo";
+            this.panel_logo.Size = new System.Drawing.Size(220, 61);
+            this.panel_logo.TabIndex = 12;
+            // 
+            // panel_btnEmpladores
+            // 
+            this.panel_btnEmpladores.BackColor = System.Drawing.Color.Transparent;
+            this.panel_btnEmpladores.Controls.Add(this.btn_Empleadores);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_btnEmpladores, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_btnEmpladores, BunifuAnimatorNS.DecorationType.None);
+            this.panel_btnEmpladores.Location = new System.Drawing.Point(6, 79);
+            this.panel_btnEmpladores.Name = "panel_btnEmpladores";
+            this.panel_btnEmpladores.Size = new System.Drawing.Size(206, 53);
+            this.panel_btnEmpladores.TabIndex = 13;
+            // 
+            // panel_empleados
+            // 
+            this.panel_empleados.BackColor = System.Drawing.Color.Transparent;
+            this.panel_empleados.Controls.Add(this.btn_Empleados);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_empleados, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_empleados, BunifuAnimatorNS.DecorationType.None);
+            this.panel_empleados.Location = new System.Drawing.Point(7, 299);
+            this.panel_empleados.Name = "panel_empleados";
+            this.panel_empleados.Size = new System.Drawing.Size(206, 53);
+            this.panel_empleados.TabIndex = 16;
+            // 
+            // btn_Empleados
+            // 
+            this.btn_Empleados.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Empleados.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Empleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Empleados.BorderRadius = 0;
+            this.btn_Empleados.ButtonText = "      Empleados";
+            this.btn_Empleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_Empleados, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_Empleados, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Empleados.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Empleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Empleados.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Empleados.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_Empleados.Iconimage")));
+            this.btn_Empleados.Iconimage_right = null;
+            this.btn_Empleados.Iconimage_right_Selected = null;
+            this.btn_Empleados.Iconimage_Selected = null;
+            this.btn_Empleados.IconMarginLeft = 0;
+            this.btn_Empleados.IconMarginRight = 0;
+            this.btn_Empleados.IconRightVisible = true;
+            this.btn_Empleados.IconRightZoom = 0D;
+            this.btn_Empleados.IconVisible = true;
+            this.btn_Empleados.IconZoom = 70D;
+            this.btn_Empleados.IsTab = false;
+            this.btn_Empleados.Location = new System.Drawing.Point(0, 0);
+            this.btn_Empleados.Name = "btn_Empleados";
+            this.btn_Empleados.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Empleados.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btn_Empleados.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Empleados.selected = false;
+            this.btn_Empleados.Size = new System.Drawing.Size(206, 48);
+            this.btn_Empleados.TabIndex = 15;
+            this.btn_Empleados.Text = "      Empleados";
+            this.btn_Empleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Empleados.Textcolor = System.Drawing.Color.White;
+            this.btn_Empleados.TextFont = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Empleados.Click += new System.EventHandler(this.Btn_Empleados_Click);
+            // 
+            // panel_menuEmpleados
+            // 
+            this.panel_menuEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.panel_menuEmpleados.Controls.Add(this.btn_listarEmpleados);
+            this.panel_menuEmpleados.Controls.Add(this.btn_editarEmpleados);
+            this.panel_menuEmpleados.Controls.Add(this.btn_agregarEmpleados);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_menuEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_menuEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.panel_menuEmpleados.Location = new System.Drawing.Point(7, 358);
+            this.panel_menuEmpleados.Name = "panel_menuEmpleados";
+            this.panel_menuEmpleados.Size = new System.Drawing.Size(206, 147);
+            this.panel_menuEmpleados.TabIndex = 17;
+            // 
+            // btn_listarEmpleados
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.btn_listarEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_listarEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.btn_listarEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_listarEmpleados.FlatAppearance.BorderSize = 0;
+            this.btn_listarEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_listarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_listarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_listarEmpleados.Font = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_listarEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btn_listarEmpleados.Location = new System.Drawing.Point(0, 90);
+            this.btn_listarEmpleados.Name = "btn_listarEmpleados";
+            this.btn_listarEmpleados.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btn_listarEmpleados.Size = new System.Drawing.Size(206, 45);
+            this.btn_listarEmpleados.TabIndex = 14;
+            this.btn_listarEmpleados.Text = "LISTAR";
+            this.btn_listarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_listarEmpleados.UseVisualStyleBackColor = true;
+            // 
+            // btn_editarEmpleados
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.btn_editarEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_editarEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.btn_editarEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_editarEmpleados.FlatAppearance.BorderSize = 0;
+            this.btn_editarEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_editarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_editarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_editarEmpleados.Font = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editarEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btn_editarEmpleados.Location = new System.Drawing.Point(0, 45);
+            this.btn_editarEmpleados.Name = "btn_editarEmpleados";
+            this.btn_editarEmpleados.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btn_editarEmpleados.Size = new System.Drawing.Size(206, 45);
+            this.btn_editarEmpleados.TabIndex = 13;
+            this.btn_editarEmpleados.Text = "EDITAR";
+            this.btn_editarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_editarEmpleados.UseVisualStyleBackColor = true;
+            // 
+            // btn_agregarEmpleados
+            // 
+            this.btn_agregarEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_agregarEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_agregarEmpleados, BunifuAnimatorNS.DecorationType.None);
+            this.btn_agregarEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_agregarEmpleados.FlatAppearance.BorderSize = 0;
+            this.btn_agregarEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_agregarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_agregarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agregarEmpleados.Font = new System.Drawing.Font("Poppins", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregarEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btn_agregarEmpleados.Location = new System.Drawing.Point(0, 0);
+            this.btn_agregarEmpleados.Name = "btn_agregarEmpleados";
+            this.btn_agregarEmpleados.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btn_agregarEmpleados.Size = new System.Drawing.Size(206, 45);
+            this.btn_agregarEmpleados.TabIndex = 12;
+            this.btn_agregarEmpleados.Text = "AGREGAR";
+            this.btn_agregarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agregarEmpleados.UseVisualStyleBackColor = false;
+            // 
+            // salir
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.salir, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.salir, BunifuAnimatorNS.DecorationType.None);
+            this.salir.FlatAppearance.BorderSize = 0;
+            this.salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salir.Image = ((System.Drawing.Image)(resources.GetObject("salir.Image")));
+            this.salir.Location = new System.Drawing.Point(942, 25);
+            this.salir.Name = "salir";
+            this.salir.Size = new System.Drawing.Size(30, 30);
+            this.salir.TabIndex = 12;
+            this.salir.UseVisualStyleBackColor = true;
+            this.salir.Click += new System.EventHandler(this.Salir_Click);
+            // 
+            // minimizar
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.minimizar, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.minimizar, BunifuAnimatorNS.DecorationType.None);
+            this.minimizar.FlatAppearance.BorderSize = 0;
+            this.minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizar.Image = ((System.Drawing.Image)(resources.GetObject("minimizar.Image")));
+            this.minimizar.Location = new System.Drawing.Point(906, 25);
+            this.minimizar.Name = "minimizar";
+            this.minimizar.Size = new System.Drawing.Size(30, 30);
+            this.minimizar.TabIndex = 13;
+            this.minimizar.UseVisualStyleBackColor = true;
+            this.minimizar.Click += new System.EventHandler(this.Minimizar_Click);
             // 
             // Form1
             // 
@@ -529,13 +583,17 @@
             this.Text = "Form1";
             this.panel_menuTop.ResumeLayout(false);
             this.panel_menuTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb__salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).EndInit();
             this.panel_sidebarWrapper.ResumeLayout(false);
             this.panel_sidebar.ResumeLayout(false);
-            this.panel_sidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_formum)).EndInit();
+            this.panel_central.ResumeLayout(false);
+            this.panel_menuEmpleadores.ResumeLayout(false);
+            this.panel_logo.ResumeLayout(false);
+            this.panel_logo.PerformLayout();
+            this.panel_btnEmpladores.ResumeLayout(false);
+            this.panel_empleados.ResumeLayout(false);
+            this.panel_menuEmpleados.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -548,22 +606,29 @@
         private System.Windows.Forms.Panel panel_central;
         private System.Windows.Forms.PictureBox picb_dashboard;
         private System.Windows.Forms.Label lbl_dashboard;
-        private System.Windows.Forms.PictureBox picb_minimizar;
-        private System.Windows.Forms.PictureBox picb__salir;
         private Bunifu.Framework.UI.BunifuGradientPanel panel_sidebar;
         private System.Windows.Forms.Label lbl_formum;
         private System.Windows.Forms.PictureBox pcb_formum;
         private Bunifu.Framework.UI.BunifuSeparator separator_sideBar1;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_verEmpleadores;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_editarEmpleador;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_agregarEmpleador;
         private Bunifu.Framework.UI.BunifuSeparator separator_sidebar2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_agregarEmpleado;
         private Bunifu.Framework.UI.BunifuElipse Elipse_CurvaSidebar;
         private BunifuAnimatorNS.BunifuTransition transition_sidebarAbrir;
         private BunifuAnimatorNS.BunifuTransition transition_sidebarCerrar;
+        private System.Windows.Forms.Panel panel_menuEmpleadores;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_Empleadores;
+        private System.Windows.Forms.Button btn_listarEmpleador;
+        private System.Windows.Forms.Button btn_editarEmpleador;
+        private System.Windows.Forms.Button btn_agregarEmpleador;
+        private System.Windows.Forms.Panel panel_btnEmpladores;
+        private System.Windows.Forms.Panel panel_logo;
+        private System.Windows.Forms.Panel panel_menuEmpleados;
+        private System.Windows.Forms.Button btn_listarEmpleados;
+        private System.Windows.Forms.Button btn_editarEmpleados;
+        private System.Windows.Forms.Button btn_agregarEmpleados;
+        private System.Windows.Forms.Panel panel_empleados;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_Empleados;
+        private System.Windows.Forms.Button salir;
+        private System.Windows.Forms.Button minimizar;
     }
 }
 

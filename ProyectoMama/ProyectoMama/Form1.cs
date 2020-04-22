@@ -16,22 +16,17 @@ namespace ProyectoMama
         {
             InitializeComponent();
         }
-
-        //private void PictureBox1_Click(object sender, EventArgs e)
-        //{
-        //
-        //}
-
-        private void Picb_minimizar_Click(object sender, EventArgs e)
+        private void Minimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+
         }
 
-        private void Picb__salir_Click(object sender, EventArgs e)
+        private void Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
 
+        }
         private void Picb_dashboard_Click(object sender, EventArgs e)
         {
             if (panel_sidebar.Width == 220)
@@ -53,5 +48,24 @@ namespace ProyectoMama
                 transition_sidebarAbrir.Show(panel_sidebar);
             }
         }
+
+        private void Btn_Empleadores_Click(object sender, EventArgs e)
+        {
+            if (panel_menuEmpleadores.Visible == true)
+                panel_menuEmpleadores.Visible = false;
+            else
+                panel_menuEmpleadores.Visible = true;
+        }
+
+        private void Btn_Empleados_Click(object sender, EventArgs e)
+        {
+            if (panel_menuEmpleados.Visible == true)
+                panel_menuEmpleados.Visible = false;
+            else
+                panel_menuEmpleados.Visible = true;
+
+        }
+
+
     }
 }
