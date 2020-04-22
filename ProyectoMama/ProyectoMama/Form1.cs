@@ -46,5 +46,7 @@ namespace ProyectoMama
             picb_maximizar.Visible = true;
             picb_restaurar.Visible = false;
         }
+
+
     }
 }
