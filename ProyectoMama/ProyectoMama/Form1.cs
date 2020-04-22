@@ -47,6 +47,22 @@ namespace ProyectoMama
             picb_restaurar.Visible = false;
         }
 
-
+        private void Picb_dashboard_Click(object sender, EventArgs e)
+        {
+            if (panel_sidebar.Width == 220)
+            {
+                panel_sidebarWrapper.Width = 90;
+                panel_sidebar.Width = 68;
+                separator_sideBar1.Width = 52;
+                separator_sidebar2.Width = 52;
+            }
+            else
+            {
+                panel_sidebarWrapper.Width = 250;
+                panel_sidebar.Width = 220;
+                separator_sideBar1.Width = 206;
+                separator_sidebar2.Width = 206;
+            }
+        }
     }
 }
