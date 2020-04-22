@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panel_menuTop = new System.Windows.Forms.Panel();
@@ -50,6 +53,9 @@
             this.lbl_formum = new System.Windows.Forms.Label();
             this.pcb_formum = new System.Windows.Forms.PictureBox();
             this.panel_central = new System.Windows.Forms.Panel();
+            this.Elipse_CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.transition_sidebarCerrar = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.transition_sidebarAbrir = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel_menuTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_minimizar)).BeginInit();
@@ -63,6 +69,8 @@
             // 
             // doubleBitmapControl1
             // 
+            this.transition_sidebarAbrir.SetDecoration(this.doubleBitmapControl1, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.doubleBitmapControl1, BunifuAnimatorNS.DecorationType.None);
             this.doubleBitmapControl1.Location = new System.Drawing.Point(749, 95);
             this.doubleBitmapControl1.Name = "doubleBitmapControl1";
             this.doubleBitmapControl1.Size = new System.Drawing.Size(8, 8);
@@ -79,6 +87,8 @@
             this.panel_menuTop.Controls.Add(this.picb__salir);
             this.panel_menuTop.Controls.Add(this.lbl_dashboard);
             this.panel_menuTop.Controls.Add(this.picb_dashboard);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_menuTop, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_menuTop, BunifuAnimatorNS.DecorationType.None);
             this.panel_menuTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_menuTop.Location = new System.Drawing.Point(0, 0);
             this.panel_menuTop.Name = "panel_menuTop";
@@ -88,6 +98,8 @@
             // picb_restaurar
             // 
             this.picb_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.transition_sidebarCerrar.SetDecoration(this.picb_restaurar, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.picb_restaurar, BunifuAnimatorNS.DecorationType.None);
             this.picb_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("picb_restaurar.Image")));
             this.picb_restaurar.Location = new System.Drawing.Point(897, 25);
             this.picb_restaurar.Name = "picb_restaurar";
@@ -101,6 +113,8 @@
             // picb_minimizar
             // 
             this.picb_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.transition_sidebarCerrar.SetDecoration(this.picb_minimizar, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.picb_minimizar, BunifuAnimatorNS.DecorationType.None);
             this.picb_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("picb_minimizar.Image")));
             this.picb_minimizar.Location = new System.Drawing.Point(861, 25);
             this.picb_minimizar.Name = "picb_minimizar";
@@ -113,6 +127,8 @@
             // picb_maximizar
             // 
             this.picb_maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.transition_sidebarCerrar.SetDecoration(this.picb_maximizar, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.picb_maximizar, BunifuAnimatorNS.DecorationType.None);
             this.picb_maximizar.Image = ((System.Drawing.Image)(resources.GetObject("picb_maximizar.Image")));
             this.picb_maximizar.Location = new System.Drawing.Point(897, 25);
             this.picb_maximizar.Name = "picb_maximizar";
@@ -125,6 +141,8 @@
             // picb__salir
             // 
             this.picb__salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.transition_sidebarCerrar.SetDecoration(this.picb__salir, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.picb__salir, BunifuAnimatorNS.DecorationType.None);
             this.picb__salir.Image = ((System.Drawing.Image)(resources.GetObject("picb__salir.Image")));
             this.picb__salir.Location = new System.Drawing.Point(933, 25);
             this.picb__salir.Name = "picb__salir";
@@ -137,6 +155,8 @@
             // lbl_dashboard
             // 
             this.lbl_dashboard.AutoSize = true;
+            this.transition_sidebarCerrar.SetDecoration(this.lbl_dashboard, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.lbl_dashboard, BunifuAnimatorNS.DecorationType.None);
             this.lbl_dashboard.Font = new System.Drawing.Font("Poppins", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dashboard.ForeColor = System.Drawing.Color.White;
             this.lbl_dashboard.Location = new System.Drawing.Point(59, 27);
@@ -147,6 +167,8 @@
             // 
             // picb_dashboard
             // 
+            this.transition_sidebarCerrar.SetDecoration(this.picb_dashboard, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.picb_dashboard, BunifuAnimatorNS.DecorationType.None);
             this.picb_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("picb_dashboard.Image")));
             this.picb_dashboard.Location = new System.Drawing.Point(23, 25);
             this.picb_dashboard.Name = "picb_dashboard";
@@ -160,6 +182,8 @@
             // 
             this.panel_sidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.panel_sidebarWrapper.Controls.Add(this.panel_sidebar);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_sidebarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_sidebarWrapper, BunifuAnimatorNS.DecorationType.None);
             this.panel_sidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_sidebarWrapper.Location = new System.Drawing.Point(0, 80);
             this.panel_sidebarWrapper.Name = "panel_sidebarWrapper";
@@ -180,6 +204,8 @@
             this.panel_sidebar.Controls.Add(this.separator_sideBar1);
             this.panel_sidebar.Controls.Add(this.lbl_formum);
             this.panel_sidebar.Controls.Add(this.pcb_formum);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_sidebar, BunifuAnimatorNS.DecorationType.None);
             this.panel_sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
             this.panel_sidebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
             this.panel_sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
@@ -198,6 +224,8 @@
             this.bunifuFlatButton2.BorderRadius = 0;
             this.bunifuFlatButton2.ButtonText = "      Ver Empleados";
             this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
@@ -232,6 +260,8 @@
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "      Editar Empleado";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
@@ -266,6 +296,8 @@
             this.btn_agregarEmpleado.BorderRadius = 0;
             this.btn_agregarEmpleado.ButtonText = "      Agregar Empleado";
             this.btn_agregarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_agregarEmpleado, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_agregarEmpleado, BunifuAnimatorNS.DecorationType.None);
             this.btn_agregarEmpleado.DisabledColor = System.Drawing.Color.Gray;
             this.btn_agregarEmpleado.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_agregarEmpleado.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_agregarEmpleado.Iconimage")));
@@ -295,6 +327,8 @@
             // separator_sidebar2
             // 
             this.separator_sidebar2.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarAbrir.SetDecoration(this.separator_sidebar2, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.separator_sidebar2, BunifuAnimatorNS.DecorationType.None);
             this.separator_sidebar2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.separator_sidebar2.LineThickness = 1;
             this.separator_sidebar2.Location = new System.Drawing.Point(7, 228);
@@ -312,6 +346,8 @@
             this.btn_verEmpleadores.BorderRadius = 0;
             this.btn_verEmpleadores.ButtonText = "      Ver Empleadores";
             this.btn_verEmpleadores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_verEmpleadores, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_verEmpleadores, BunifuAnimatorNS.DecorationType.None);
             this.btn_verEmpleadores.DisabledColor = System.Drawing.Color.Gray;
             this.btn_verEmpleadores.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_verEmpleadores.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_verEmpleadores.Iconimage")));
@@ -346,6 +382,8 @@
             this.btn_editarEmpleador.BorderRadius = 0;
             this.btn_editarEmpleador.ButtonText = "      Editar Empleador";
             this.btn_editarEmpleador.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_editarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_editarEmpleador, BunifuAnimatorNS.DecorationType.None);
             this.btn_editarEmpleador.DisabledColor = System.Drawing.Color.Gray;
             this.btn_editarEmpleador.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_editarEmpleador.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_editarEmpleador.Iconimage")));
@@ -380,6 +418,8 @@
             this.btn_agregarEmpleador.BorderRadius = 0;
             this.btn_agregarEmpleador.ButtonText = "      Agregar Empleador";
             this.btn_agregarEmpleador.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition_sidebarCerrar.SetDecoration(this.btn_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
             this.btn_agregarEmpleador.DisabledColor = System.Drawing.Color.Gray;
             this.btn_agregarEmpleador.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_agregarEmpleador.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_agregarEmpleador.Iconimage")));
@@ -409,6 +449,8 @@
             // separator_sideBar1
             // 
             this.separator_sideBar1.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarAbrir.SetDecoration(this.separator_sideBar1, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.separator_sideBar1, BunifuAnimatorNS.DecorationType.None);
             this.separator_sideBar1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.separator_sideBar1.LineThickness = 1;
             this.separator_sideBar1.Location = new System.Drawing.Point(6, 55);
@@ -422,6 +464,8 @@
             // 
             this.lbl_formum.AutoSize = true;
             this.lbl_formum.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.lbl_formum, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.lbl_formum, BunifuAnimatorNS.DecorationType.None);
             this.lbl_formum.Font = new System.Drawing.Font("Poppins", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_formum.ForeColor = System.Drawing.Color.White;
             this.lbl_formum.Location = new System.Drawing.Point(69, 15);
@@ -433,6 +477,8 @@
             // pcb_formum
             // 
             this.pcb_formum.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.pcb_formum, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.pcb_formum, BunifuAnimatorNS.DecorationType.None);
             this.pcb_formum.Image = ((System.Drawing.Image)(resources.GetObject("pcb_formum.Image")));
             this.pcb_formum.Location = new System.Drawing.Point(17, 13);
             this.pcb_formum.Name = "pcb_formum";
@@ -443,11 +489,63 @@
             // 
             // panel_central
             // 
+            this.panel_central.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.transition_sidebarAbrir.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
             this.panel_central.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_central.Location = new System.Drawing.Point(250, 80);
             this.panel_central.Name = "panel_central";
             this.panel_central.Size = new System.Drawing.Size(734, 581);
             this.panel_central.TabIndex = 3;
+            // 
+            // Elipse_CurvaSidebar
+            // 
+            this.Elipse_CurvaSidebar.ElipseRadius = 7;
+            this.Elipse_CurvaSidebar.TargetControl = this.panel_sidebar;
+            // 
+            // transition_sidebarCerrar
+            // 
+            this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
+            this.transition_sidebarCerrar.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.transition_sidebarCerrar.DefaultAnimation = animation4;
+            this.transition_sidebarCerrar.Interval = 15;
+            // 
+            // transition_sidebarAbrir
+            // 
+            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transition_sidebarAbrir.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.transition_sidebarAbrir.DefaultAnimation = animation3;
+            this.transition_sidebarAbrir.Interval = 15;
             // 
             // Form1
             // 
@@ -458,6 +556,8 @@
             this.Controls.Add(this.panel_sidebarWrapper);
             this.Controls.Add(this.panel_menuTop);
             this.Controls.Add(this.doubleBitmapControl1);
+            this.transition_sidebarAbrir.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -500,6 +600,9 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btn_agregarEmpleado;
+        private Bunifu.Framework.UI.BunifuElipse Elipse_CurvaSidebar;
+        private BunifuAnimatorNS.BunifuTransition transition_sidebarAbrir;
+        private BunifuAnimatorNS.BunifuTransition transition_sidebarCerrar;
     }
 }
 
