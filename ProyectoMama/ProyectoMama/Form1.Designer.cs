@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panel_menuTop = new System.Windows.Forms.Panel();
-            this.picb_restaurar = new System.Windows.Forms.PictureBox();
             this.picb_minimizar = new System.Windows.Forms.PictureBox();
-            this.picb_maximizar = new System.Windows.Forms.PictureBox();
             this.picb__salir = new System.Windows.Forms.PictureBox();
             this.lbl_dashboard = new System.Windows.Forms.Label();
             this.picb_dashboard = new System.Windows.Forms.PictureBox();
@@ -57,9 +55,7 @@
             this.transition_sidebarCerrar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.transition_sidebarAbrir = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel_menuTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_minimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb__salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).BeginInit();
             this.panel_sidebarWrapper.SuspendLayout();
@@ -81,9 +77,7 @@
             // panel_menuTop
             // 
             this.panel_menuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.panel_menuTop.Controls.Add(this.picb_restaurar);
             this.panel_menuTop.Controls.Add(this.picb_minimizar);
-            this.panel_menuTop.Controls.Add(this.picb_maximizar);
             this.panel_menuTop.Controls.Add(this.picb__salir);
             this.panel_menuTop.Controls.Add(this.lbl_dashboard);
             this.panel_menuTop.Controls.Add(this.picb_dashboard);
@@ -95,48 +89,19 @@
             this.panel_menuTop.Size = new System.Drawing.Size(984, 80);
             this.panel_menuTop.TabIndex = 1;
             // 
-            // picb_restaurar
-            // 
-            this.picb_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.transition_sidebarCerrar.SetDecoration(this.picb_restaurar, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.picb_restaurar, BunifuAnimatorNS.DecorationType.None);
-            this.picb_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("picb_restaurar.Image")));
-            this.picb_restaurar.Location = new System.Drawing.Point(897, 25);
-            this.picb_restaurar.Name = "picb_restaurar";
-            this.picb_restaurar.Size = new System.Drawing.Size(30, 30);
-            this.picb_restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picb_restaurar.TabIndex = 5;
-            this.picb_restaurar.TabStop = false;
-            this.picb_restaurar.Visible = false;
-            this.picb_restaurar.Click += new System.EventHandler(this.Picb_restaurar_Click);
-            // 
             // picb_minimizar
             // 
             this.picb_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.transition_sidebarCerrar.SetDecoration(this.picb_minimizar, BunifuAnimatorNS.DecorationType.None);
             this.transition_sidebarAbrir.SetDecoration(this.picb_minimizar, BunifuAnimatorNS.DecorationType.None);
             this.picb_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("picb_minimizar.Image")));
-            this.picb_minimizar.Location = new System.Drawing.Point(861, 25);
+            this.picb_minimizar.Location = new System.Drawing.Point(897, 25);
             this.picb_minimizar.Name = "picb_minimizar";
             this.picb_minimizar.Size = new System.Drawing.Size(30, 30);
             this.picb_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picb_minimizar.TabIndex = 4;
             this.picb_minimizar.TabStop = false;
             this.picb_minimizar.Click += new System.EventHandler(this.Picb_minimizar_Click);
-            // 
-            // picb_maximizar
-            // 
-            this.picb_maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.transition_sidebarCerrar.SetDecoration(this.picb_maximizar, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.picb_maximizar, BunifuAnimatorNS.DecorationType.None);
-            this.picb_maximizar.Image = ((System.Drawing.Image)(resources.GetObject("picb_maximizar.Image")));
-            this.picb_maximizar.Location = new System.Drawing.Point(897, 25);
-            this.picb_maximizar.Name = "picb_maximizar";
-            this.picb_maximizar.Size = new System.Drawing.Size(30, 30);
-            this.picb_maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picb_maximizar.TabIndex = 3;
-            this.picb_maximizar.TabStop = false;
-            this.picb_maximizar.Click += new System.EventHandler(this.Picb_maximizar_Click);
             // 
             // picb__salir
             // 
@@ -507,28 +472,6 @@
             // 
             this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transition_sidebarCerrar.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 1F;
-            this.transition_sidebarCerrar.DefaultAnimation = animation4;
-            this.transition_sidebarCerrar.Interval = 15;
-            // 
-            // transition_sidebarAbrir
-            // 
-            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.transition_sidebarAbrir.Cursor = null;
             animation3.AnimateOnlyDifferences = true;
             animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
             animation3.LeafCoeff = 0F;
@@ -537,14 +480,36 @@
             animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
             animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
             animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation3.Padding = new System.Windows.Forms.Padding(0);
             animation3.RotateCoeff = 0F;
             animation3.RotateLimit = 0F;
             animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
             animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
             animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.transition_sidebarAbrir.DefaultAnimation = animation3;
+            animation3.TransparencyCoeff = 1F;
+            this.transition_sidebarCerrar.DefaultAnimation = animation3;
+            this.transition_sidebarCerrar.Interval = 15;
+            // 
+            // transition_sidebarAbrir
+            // 
+            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transition_sidebarAbrir.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.transition_sidebarAbrir.DefaultAnimation = animation4;
             this.transition_sidebarAbrir.Interval = 15;
             // 
             // Form1
@@ -564,9 +529,7 @@
             this.Text = "Form1";
             this.panel_menuTop.ResumeLayout(false);
             this.panel_menuTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb__salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).EndInit();
             this.panel_sidebarWrapper.ResumeLayout(false);
@@ -585,9 +548,7 @@
         private System.Windows.Forms.Panel panel_central;
         private System.Windows.Forms.PictureBox picb_dashboard;
         private System.Windows.Forms.Label lbl_dashboard;
-        private System.Windows.Forms.PictureBox picb_restaurar;
         private System.Windows.Forms.PictureBox picb_minimizar;
-        private System.Windows.Forms.PictureBox picb_maximizar;
         private System.Windows.Forms.PictureBox picb__salir;
         private Bunifu.Framework.UI.BunifuGradientPanel panel_sidebar;
         private System.Windows.Forms.Label lbl_formum;

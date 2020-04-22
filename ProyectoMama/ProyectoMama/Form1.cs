@@ -27,24 +27,9 @@ namespace ProyectoMama
             WindowState = FormWindowState.Minimized;
         }
 
-        private void Picb_maximizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Maximized;
-            picb_maximizar.Visible = false;
-            picb_restaurar.Visible = true;
-
-        }
-
         private void Picb__salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void Picb_restaurar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Normal;
-            picb_maximizar.Visible = true;
-            picb_restaurar.Visible = false;
         }
 
         private void Picb_dashboard_Click(object sender, EventArgs e)
