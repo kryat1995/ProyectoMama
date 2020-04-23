@@ -16,10 +16,10 @@ namespace ProyectoMama
         {
             InitializeComponent();
         }
+
         private void Minimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
-
         }
 
         private void Salir_Click(object sender, EventArgs e)
@@ -27,6 +27,7 @@ namespace ProyectoMama
             Application.Exit();
 
         }
+
         private void Picb_dashboard_Click(object sender, EventArgs e)
         {
             if (panel_sidebar.Width == 220)
@@ -95,5 +96,40 @@ namespace ProyectoMama
             }
         }
 
+        private void Txt_empleadorRazonSocial_Enter(object sender, EventArgs e)
+        {
+            if (txt_empleadorRazonSocial.text == "Razon Social")
+                txt_empleadorRazonSocial.text = string.Empty;
+        }
+
+        private void Txt_empleadorRazonSocial_Leave(object sender, EventArgs e)
+        {
+            if (txt_empleadorRazonSocial.text == "")
+                txt_empleadorRazonSocial.text = "Razon Social";
+        }
+
+        private void Txt_empleadorCuit_Enter(object sender, EventArgs e)
+        {
+            if (txt_empleadorCuit.text == "CUIT")
+                txt_empleadorCuit.text = string.Empty;
+        }
+
+        private void Txt_empleadorCuit_Leave(object sender, EventArgs e)
+        {
+            if (txt_empleadorCuit.text == "")
+                txt_empleadorCuit.text = "CUIT";
+        }
+
+        private void Txt_empeladorDomicilio_Enter(object sender, EventArgs e)
+        {
+            if (txt_empeladorDomicilio.text == "Domicilio")
+                txt_empeladorDomicilio.text = string.Empty;
+        }
+
+        private void Txt_empeladorDomicilio_Leave(object sender, EventArgs e)
+        {
+            if (txt_empeladorDomicilio.text == "")
+                txt_empeladorDomicilio.text = "Domicilio";
+        }
     }
 }

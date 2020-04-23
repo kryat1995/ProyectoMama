@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panel_menuTop = new System.Windows.Forms.Panel();
@@ -57,13 +57,25 @@
             this.separator_sideBar1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lbl_formum = new System.Windows.Forms.Label();
             this.panel_central = new System.Windows.Forms.Panel();
+            this.panel_agregarEmpleador = new System.Windows.Forms.Panel();
+            this.txt_empeladorDomicilio = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleadorCuit = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleadorRazonSocial = new Bunifu.Framework.UI.BunifuTextbox();
+            this.panel_subTitulo = new System.Windows.Forms.Panel();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Elipse_CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.transition_sidebarCerrar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.transition_sidebarAbrir = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.MoverVentana = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panel_subTitulo = new System.Windows.Forms.Panel();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.elipse_subtitulo = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.ddl_empleadorProv = new Bunifu.Framework.UI.BunifuDropdown();
+            this.panel_empleadorDdlProv = new System.Windows.Forms.Panel();
+            this.elipse_empleadorPanelDdlProv = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.elipse_empleadorDdlProv = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel_empleadorPanelDdlLoc = new System.Windows.Forms.Panel();
+            this.ddl_empleadorLoc = new Bunifu.Framework.UI.BunifuDropdown();
+            this.elipse_empleadorPanelDdlLoc = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.elipse_empleadorDdlLoc = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel_menuTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).BeginInit();
             this.panel_sidebarWrapper.SuspendLayout();
@@ -75,7 +87,10 @@
             this.panel_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_formum)).BeginInit();
             this.panel_central.SuspendLayout();
+            this.panel_agregarEmpleador.SuspendLayout();
             this.panel_subTitulo.SuspendLayout();
+            this.panel_empleadorDdlProv.SuspendLayout();
+            this.panel_empleadorPanelDdlLoc.SuspendLayout();
             this.SuspendLayout();
             // 
             // doubleBitmapControl1
@@ -186,10 +201,10 @@
             this.panel_sidebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
             this.panel_sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
             this.panel_sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.panel_sidebar.Location = new System.Drawing.Point(12, 6);
+            this.panel_sidebar.Location = new System.Drawing.Point(12, 0);
             this.panel_sidebar.Name = "panel_sidebar";
             this.panel_sidebar.Quality = 10;
-            this.panel_sidebar.Size = new System.Drawing.Size(220, 583);
+            this.panel_sidebar.Size = new System.Drawing.Size(220, 589);
             this.panel_sidebar.TabIndex = 0;
             // 
             // panel_menuEmpleados
@@ -500,6 +515,7 @@
             // panel_central
             // 
             this.panel_central.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.panel_central.Controls.Add(this.panel_agregarEmpleador);
             this.panel_central.Controls.Add(this.panel_subTitulo);
             this.transition_sidebarAbrir.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
             this.transition_sidebarCerrar.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
@@ -509,61 +525,70 @@
             this.panel_central.Size = new System.Drawing.Size(740, 601);
             this.panel_central.TabIndex = 3;
             // 
-            // Elipse_CurvaSidebar
+            // panel_agregarEmpleador
             // 
-            this.Elipse_CurvaSidebar.ElipseRadius = 7;
-            this.Elipse_CurvaSidebar.TargetControl = this.panel_sidebar;
+            this.panel_agregarEmpleador.Controls.Add(this.panel_empleadorPanelDdlLoc);
+            this.panel_agregarEmpleador.Controls.Add(this.panel_empleadorDdlProv);
+            this.panel_agregarEmpleador.Controls.Add(this.txt_empeladorDomicilio);
+            this.panel_agregarEmpleador.Controls.Add(this.txt_empleadorCuit);
+            this.panel_agregarEmpleador.Controls.Add(this.txt_empleadorRazonSocial);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.panel_agregarEmpleador.Location = new System.Drawing.Point(6, 56);
+            this.panel_agregarEmpleador.Name = "panel_agregarEmpleador";
+            this.panel_agregarEmpleador.Size = new System.Drawing.Size(725, 535);
+            this.panel_agregarEmpleador.TabIndex = 1;
             // 
-            // transition_sidebarCerrar
+            // txt_empeladorDomicilio
             // 
-            this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
-            this.transition_sidebarCerrar.Cursor = null;
-            animation12.AnimateOnlyDifferences = true;
-            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
-            animation12.LeafCoeff = 0F;
-            animation12.MaxTime = 1F;
-            animation12.MinTime = 0F;
-            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
-            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
-            animation12.MosaicSize = 0;
-            animation12.Padding = new System.Windows.Forms.Padding(0);
-            animation12.RotateCoeff = 0F;
-            animation12.RotateLimit = 0F;
-            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
-            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
-            animation12.TimeCoeff = 0F;
-            animation12.TransparencyCoeff = 1F;
-            this.transition_sidebarCerrar.DefaultAnimation = animation12;
-            this.transition_sidebarCerrar.Interval = 15;
+            this.txt_empeladorDomicilio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empeladorDomicilio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empeladorDomicilio.BackgroundImage")));
+            this.txt_empeladorDomicilio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empeladorDomicilio, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empeladorDomicilio, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empeladorDomicilio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empeladorDomicilio.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empeladorDomicilio.Icon")));
+            this.txt_empeladorDomicilio.Location = new System.Drawing.Point(23, 120);
+            this.txt_empeladorDomicilio.Name = "txt_empeladorDomicilio";
+            this.txt_empeladorDomicilio.Size = new System.Drawing.Size(250, 42);
+            this.txt_empeladorDomicilio.TabIndex = 2;
+            this.txt_empeladorDomicilio.text = "Domicilio";
+            this.txt_empeladorDomicilio.Enter += new System.EventHandler(this.Txt_empeladorDomicilio_Enter);
+            this.txt_empeladorDomicilio.Leave += new System.EventHandler(this.Txt_empeladorDomicilio_Leave);
             // 
-            // transition_sidebarAbrir
+            // txt_empleadorCuit
             // 
-            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.transition_sidebarAbrir.Cursor = null;
-            animation11.AnimateOnlyDifferences = true;
-            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
-            animation11.LeafCoeff = 0F;
-            animation11.MaxTime = 1F;
-            animation11.MinTime = 0F;
-            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
-            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
-            animation11.MosaicSize = 0;
-            animation11.Padding = new System.Windows.Forms.Padding(0);
-            animation11.RotateCoeff = 0F;
-            animation11.RotateLimit = 0F;
-            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
-            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
-            animation11.TimeCoeff = 0F;
-            animation11.TransparencyCoeff = 0F;
-            this.transition_sidebarAbrir.DefaultAnimation = animation11;
-            this.transition_sidebarAbrir.Interval = 15;
+            this.txt_empleadorCuit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleadorCuit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleadorCuit.BackgroundImage")));
+            this.txt_empleadorCuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleadorCuit, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleadorCuit, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleadorCuit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleadorCuit.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleadorCuit.Icon")));
+            this.txt_empleadorCuit.Location = new System.Drawing.Point(23, 72);
+            this.txt_empleadorCuit.Name = "txt_empleadorCuit";
+            this.txt_empleadorCuit.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleadorCuit.TabIndex = 1;
+            this.txt_empleadorCuit.text = "CUIT";
+            this.txt_empleadorCuit.Enter += new System.EventHandler(this.Txt_empleadorCuit_Enter);
+            this.txt_empleadorCuit.Leave += new System.EventHandler(this.Txt_empleadorCuit_Leave);
             // 
-            // MoverVentana
+            // txt_empleadorRazonSocial
             // 
-            this.MoverVentana.Fixed = true;
-            this.MoverVentana.Horizontal = true;
-            this.MoverVentana.TargetControl = this.panel_menuTop;
-            this.MoverVentana.Vertical = true;
+            this.txt_empleadorRazonSocial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleadorRazonSocial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleadorRazonSocial.BackgroundImage")));
+            this.txt_empleadorRazonSocial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleadorRazonSocial, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleadorRazonSocial, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleadorRazonSocial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleadorRazonSocial.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleadorRazonSocial.Icon")));
+            this.txt_empleadorRazonSocial.Location = new System.Drawing.Point(23, 24);
+            this.txt_empleadorRazonSocial.Name = "txt_empleadorRazonSocial";
+            this.txt_empleadorRazonSocial.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleadorRazonSocial.TabIndex = 0;
+            this.txt_empleadorRazonSocial.text = "Razon Social";
+            this.txt_empleadorRazonSocial.Enter += new System.EventHandler(this.Txt_empleadorRazonSocial_Enter);
+            this.txt_empleadorRazonSocial.Leave += new System.EventHandler(this.Txt_empleadorRazonSocial_Leave);
             // 
             // panel_subTitulo
             // 
@@ -594,10 +619,144 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(740, 50);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
-            // bunifuElipse1
+            // Elipse_CurvaSidebar
             // 
-            this.bunifuElipse1.ElipseRadius = 50;
-            this.bunifuElipse1.TargetControl = this.bunifuGradientPanel1;
+            this.Elipse_CurvaSidebar.ElipseRadius = 7;
+            this.Elipse_CurvaSidebar.TargetControl = this.panel_sidebar;
+            // 
+            // transition_sidebarCerrar
+            // 
+            this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
+            this.transition_sidebarCerrar.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.transition_sidebarCerrar.DefaultAnimation = animation2;
+            this.transition_sidebarCerrar.Interval = 15;
+            // 
+            // transition_sidebarAbrir
+            // 
+            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transition_sidebarAbrir.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.transition_sidebarAbrir.DefaultAnimation = animation1;
+            this.transition_sidebarAbrir.Interval = 15;
+            // 
+            // MoverVentana
+            // 
+            this.MoverVentana.Fixed = true;
+            this.MoverVentana.Horizontal = true;
+            this.MoverVentana.TargetControl = this.panel_menuTop;
+            this.MoverVentana.Vertical = true;
+            // 
+            // elipse_subtitulo
+            // 
+            this.elipse_subtitulo.ElipseRadius = 7;
+            this.elipse_subtitulo.TargetControl = this.bunifuGradientPanel1;
+            // 
+            // ddl_empleadorProv
+            // 
+            this.ddl_empleadorProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleadorProv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleadorProv.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleadorProv, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleadorProv, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleadorProv.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleadorProv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleadorProv.Items = new string[0];
+            this.ddl_empleadorProv.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleadorProv.Name = "ddl_empleadorProv";
+            this.ddl_empleadorProv.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleadorProv.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleadorProv.selectedIndex = -1;
+            this.ddl_empleadorProv.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleadorProv.TabIndex = 3;
+            // 
+            // panel_empleadorDdlProv
+            // 
+            this.panel_empleadorDdlProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel_empleadorDdlProv.Controls.Add(this.ddl_empleadorProv);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_empleadorDdlProv, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_empleadorDdlProv, BunifuAnimatorNS.DecorationType.None);
+            this.panel_empleadorDdlProv.Location = new System.Drawing.Point(23, 168);
+            this.panel_empleadorDdlProv.Name = "panel_empleadorDdlProv";
+            this.panel_empleadorDdlProv.Size = new System.Drawing.Size(253, 45);
+            this.panel_empleadorDdlProv.TabIndex = 4;
+            // 
+            // elipse_empleadorPanelDdlProv
+            // 
+            this.elipse_empleadorPanelDdlProv.ElipseRadius = 10;
+            this.elipse_empleadorPanelDdlProv.TargetControl = this.panel_empleadorDdlProv;
+            // 
+            // elipse_empleadorDdlProv
+            // 
+            this.elipse_empleadorDdlProv.ElipseRadius = 10;
+            this.elipse_empleadorDdlProv.TargetControl = this.ddl_empleadorProv;
+            // 
+            // panel_empleadorPanelDdlLoc
+            // 
+            this.panel_empleadorPanelDdlLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel_empleadorPanelDdlLoc.Controls.Add(this.ddl_empleadorLoc);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_empleadorPanelDdlLoc, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_empleadorPanelDdlLoc, BunifuAnimatorNS.DecorationType.None);
+            this.panel_empleadorPanelDdlLoc.Location = new System.Drawing.Point(23, 216);
+            this.panel_empleadorPanelDdlLoc.Name = "panel_empleadorPanelDdlLoc";
+            this.panel_empleadorPanelDdlLoc.Size = new System.Drawing.Size(253, 45);
+            this.panel_empleadorPanelDdlLoc.TabIndex = 5;
+            // 
+            // ddl_empleadorLoc
+            // 
+            this.ddl_empleadorLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleadorLoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleadorLoc.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleadorLoc, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleadorLoc, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleadorLoc.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleadorLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleadorLoc.Items = new string[0];
+            this.ddl_empleadorLoc.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleadorLoc.Name = "ddl_empleadorLoc";
+            this.ddl_empleadorLoc.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleadorLoc.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleadorLoc.selectedIndex = -1;
+            this.ddl_empleadorLoc.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleadorLoc.TabIndex = 3;
+            // 
+            // elipse_empleadorPanelDdlLoc
+            // 
+            this.elipse_empleadorPanelDdlLoc.ElipseRadius = 7;
+            this.elipse_empleadorPanelDdlLoc.TargetControl = this.panel_empleadorPanelDdlLoc;
+            // 
+            // elipse_empleadorDdlLoc
+            // 
+            this.elipse_empleadorDdlLoc.ElipseRadius = 7;
+            this.elipse_empleadorDdlLoc.TargetControl = this.ddl_empleadorLoc;
             // 
             // Form1
             // 
@@ -627,7 +786,10 @@
             this.panel_logo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_formum)).EndInit();
             this.panel_central.ResumeLayout(false);
+            this.panel_agregarEmpleador.ResumeLayout(false);
             this.panel_subTitulo.ResumeLayout(false);
+            this.panel_empleadorDdlProv.ResumeLayout(false);
+            this.panel_empleadorPanelDdlLoc.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -665,7 +827,19 @@
         private Bunifu.Framework.UI.BunifuDragControl MoverVentana;
         private System.Windows.Forms.Panel panel_subTitulo;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse elipse_subtitulo;
+        private System.Windows.Forms.Panel panel_agregarEmpleador;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleadorRazonSocial;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleadorCuit;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empeladorDomicilio;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleadorProv;
+        private System.Windows.Forms.Panel panel_empleadorDdlProv;
+        private Bunifu.Framework.UI.BunifuElipse elipse_empleadorPanelDdlProv;
+        private Bunifu.Framework.UI.BunifuElipse elipse_empleadorDdlProv;
+        private System.Windows.Forms.Panel panel_empleadorPanelDdlLoc;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleadorLoc;
+        private Bunifu.Framework.UI.BunifuElipse elipse_empleadorPanelDdlLoc;
+        private Bunifu.Framework.UI.BunifuElipse elipse_empleadorDdlLoc;
     }
 }
 
