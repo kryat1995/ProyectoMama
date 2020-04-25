@@ -131,5 +131,10 @@ namespace ProyectoMama
             if (txt_empeladorDomicilio.text == "")
                 txt_empeladorDomicilio.text = "Domicilio";
         }
+
+        private void Btn_agregarEmpleador_Click(object sender, EventArgs e)
+        {
+            lbl_subtitulo.Text = "Agregar Empleador";
+        }
     }
 }
