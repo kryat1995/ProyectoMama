@@ -98,43 +98,56 @@ namespace ProyectoMama
 
         private void Txt_empleadorRazonSocial_Enter(object sender, EventArgs e)
         {
-            if (txt_empleadorRazonSocial.text == "Razon Social")
-                txt_empleadorRazonSocial.text = string.Empty;
+            if (txt_empleador_agregar_RazonSocial.text == "Razon Social")
+                txt_empleador_agregar_RazonSocial.text = string.Empty;
         }
 
         private void Txt_empleadorRazonSocial_Leave(object sender, EventArgs e)
         {
-            if (txt_empleadorRazonSocial.text == "")
-                txt_empleadorRazonSocial.text = "Razon Social";
+            if (txt_empleador_agregar_RazonSocial.text == "")
+                txt_empleador_agregar_RazonSocial.text = "Razon Social";
         }
 
         private void Txt_empleadorCuit_Enter(object sender, EventArgs e)
         {
-            if (txt_empleadorCuit.text == "xx-xxxxxxxx-x")
-                txt_empleadorCuit.text = string.Empty;
+            if (txt_empleador_agregar_Cuit.text == "xx-xxxxxxxx-x")
+                txt_empleador_agregar_Cuit.text = string.Empty;
         }
 
         private void Txt_empleadorCuit_Leave(object sender, EventArgs e)
         {
-            if (txt_empleadorCuit.text == "")
-                txt_empleadorCuit.text = "xx-xxxxxxxx-x";
+            if (txt_empleador_agregar_Cuit.text == "")
+                txt_empleador_agregar_Cuit.text = "xx-xxxxxxxx-x";
         }
 
         private void Txt_empeladorDomicilio_Enter(object sender, EventArgs e)
         {
-            if (txt_empeladorDomicilio.text == "Domicilio")
-                txt_empeladorDomicilio.text = string.Empty;
+            if (txt_empelador_agregar_Domicilio.text == "Domicilio")
+                txt_empelador_agregar_Domicilio.text = string.Empty;
         }
 
         private void Txt_empeladorDomicilio_Leave(object sender, EventArgs e)
         {
-            if (txt_empeladorDomicilio.text == "")
-                txt_empeladorDomicilio.text = "Domicilio";
+            if (txt_empelador_agregar_Domicilio.text == "")
+                txt_empelador_agregar_Domicilio.text = "Domicilio";
         }
 
         private void Btn_agregarEmpleador_Click(object sender, EventArgs e)
         {
             lbl_subtitulo.Text = "Agregar Empleador";
         }
+
+        private void Txt_empleado_agregar_CUIL_Enter(object sender, EventArgs e)
+        {
+            if (txt_empleado_agregar_CUIL.text == "xx-xxxxxxxx-x")
+                txt_empleado_agregar_CUIL.text = string.Empty;
+        }
+
+        private void Txt_empleado_agregar_CUIL_Leave(object sender, EventArgs e)
+        {
+            if (txt_empleado_agregar_CUIL.text == "")
+                txt_empleado_agregar_CUIL.text = "xx-xxxxxxxx-x";
+        }
+
     }
 }

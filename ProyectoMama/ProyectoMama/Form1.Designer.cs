@@ -29,12 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panel_menuTop = new System.Windows.Forms.Panel();
             this.minimizar = new System.Windows.Forms.Button();
+            this.panel_agregarEmpleador = new System.Windows.Forms.Panel();
+            this.btn_empleador_agregar_agregarBase = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel_empleadorPanelDdlLoc = new System.Windows.Forms.Panel();
+            this.ddl_empleador_agregar_Loc = new Bunifu.Framework.UI.BunifuDropdown();
+            this.panel_empleadorDdlProv = new System.Windows.Forms.Panel();
+            this.ddl_empleador_agregar_Prov = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txt_empelador_agregar_Domicilio = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleador_agregar_Cuit = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleador_agregar_RazonSocial = new Bunifu.Framework.UI.BunifuTextbox();
             this.salir = new System.Windows.Forms.Button();
             this.lbl_dashboard = new System.Windows.Forms.Label();
             this.picb_dashboard = new System.Windows.Forms.PictureBox();
@@ -57,19 +71,32 @@
             this.separator_sideBar1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lbl_formum = new System.Windows.Forms.Label();
             this.panel_central = new System.Windows.Forms.Panel();
-            this.panel_agregarEmpleador = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel_empleadorPanelDdlLoc = new System.Windows.Forms.Panel();
-            this.ddl_empleadorLoc = new Bunifu.Framework.UI.BunifuDropdown();
-            this.panel_empleadorDdlProv = new System.Windows.Forms.Panel();
-            this.ddl_empleadorProv = new Bunifu.Framework.UI.BunifuDropdown();
-            this.txt_empeladorDomicilio = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txt_empleadorCuit = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txt_empleadorRazonSocial = new Bunifu.Framework.UI.BunifuTextbox();
+            this.panel_agregarEmpleado = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ddl_empleado_agregar_empleador = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.date_empleado_agregar_Fechadeinicio = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_empleado_agregar_ObraSocial = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleado_agregar_Legajo = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleado_agregar_Categoria = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btn__empleado_agregar_agregarBase = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ddl_empleado_agregar_Localidad = new Bunifu.Framework.UI.BunifuDropdown();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.ddl_empleado_agregar_Provincia = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txt_empleado_agregar_CUIL = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleado_agregar_Apellido = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txt_empleado_agregar_Nombre = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel_subTitulo = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.lbl_subtitulo = new System.Windows.Forms.Label();
@@ -82,8 +109,10 @@
             this.elipse_empleadorDdlProv = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.elipse_empleadorPanelDdlLoc = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.elipse_empleadorDdlLoc = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btn_AgregarEmpleadorBase = new System.Windows.Forms.Button();
             this.panel_menuTop.SuspendLayout();
+            this.panel_agregarEmpleador.SuspendLayout();
+            this.panel_empleadorPanelDdlLoc.SuspendLayout();
+            this.panel_empleadorDdlProv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).BeginInit();
             this.panel_sidebarWrapper.SuspendLayout();
             this.panel_sidebar.SuspendLayout();
@@ -94,9 +123,11 @@
             this.panel_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_formum)).BeginInit();
             this.panel_central.SuspendLayout();
-            this.panel_agregarEmpleador.SuspendLayout();
-            this.panel_empleadorPanelDdlLoc.SuspendLayout();
-            this.panel_empleadorDdlProv.SuspendLayout();
+            this.panel_agregarEmpleado.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel_subTitulo.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -116,6 +147,7 @@
             // 
             this.panel_menuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.panel_menuTop.Controls.Add(this.minimizar);
+            this.panel_menuTop.Controls.Add(this.panel_agregarEmpleador);
             this.panel_menuTop.Controls.Add(this.salir);
             this.panel_menuTop.Controls.Add(this.lbl_dashboard);
             this.panel_menuTop.Controls.Add(this.picb_dashboard);
@@ -140,6 +172,224 @@
             this.minimizar.TabIndex = 13;
             this.minimizar.UseVisualStyleBackColor = true;
             this.minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            // 
+            // panel_agregarEmpleador
+            // 
+            this.panel_agregarEmpleador.Controls.Add(this.btn_empleador_agregar_agregarBase);
+            this.panel_agregarEmpleador.Controls.Add(this.label5);
+            this.panel_agregarEmpleador.Controls.Add(this.label4);
+            this.panel_agregarEmpleador.Controls.Add(this.label3);
+            this.panel_agregarEmpleador.Controls.Add(this.label2);
+            this.panel_agregarEmpleador.Controls.Add(this.label1);
+            this.panel_agregarEmpleador.Controls.Add(this.panel_empleadorPanelDdlLoc);
+            this.panel_agregarEmpleador.Controls.Add(this.panel_empleadorDdlProv);
+            this.panel_agregarEmpleador.Controls.Add(this.txt_empelador_agregar_Domicilio);
+            this.panel_agregarEmpleador.Controls.Add(this.txt_empleador_agregar_Cuit);
+            this.panel_agregarEmpleador.Controls.Add(this.txt_empleador_agregar_RazonSocial);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
+            this.panel_agregarEmpleador.Location = new System.Drawing.Point(176, 0);
+            this.panel_agregarEmpleador.Name = "panel_agregarEmpleador";
+            this.panel_agregarEmpleador.Size = new System.Drawing.Size(68, 76);
+            this.panel_agregarEmpleador.TabIndex = 1;
+            // 
+            // btn_empleador_agregar_agregarBase
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.btn_empleador_agregar_agregarBase, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn_empleador_agregar_agregarBase, BunifuAnimatorNS.DecorationType.None);
+            this.btn_empleador_agregar_agregarBase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn_empleador_agregar_agregarBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_empleador_agregar_agregarBase.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_empleador_agregar_agregarBase.ForeColor = System.Drawing.Color.White;
+            this.btn_empleador_agregar_agregarBase.Location = new System.Drawing.Point(235, 291);
+            this.btn_empleador_agregar_agregarBase.Name = "btn_empleador_agregar_agregarBase";
+            this.btn_empleador_agregar_agregarBase.Size = new System.Drawing.Size(250, 45);
+            this.btn_empleador_agregar_agregarBase.TabIndex = 11;
+            this.btn_empleador_agregar_agregarBase.Text = "Agregar Empleador";
+            this.btn_empleador_agregar_agregarBase.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label5.Location = new System.Drawing.Point(131, 225);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 25);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Localidad:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label4.Location = new System.Drawing.Point(130, 178);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Provincia:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label3.Location = new System.Drawing.Point(130, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Domicilio:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label2.Location = new System.Drawing.Point(173, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "CUIT:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label1.Location = new System.Drawing.Point(98, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Razon Social: ";
+            // 
+            // panel_empleadorPanelDdlLoc
+            // 
+            this.panel_empleadorPanelDdlLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel_empleadorPanelDdlLoc.Controls.Add(this.ddl_empleador_agregar_Loc);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_empleadorPanelDdlLoc, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_empleadorPanelDdlLoc, BunifuAnimatorNS.DecorationType.None);
+            this.panel_empleadorPanelDdlLoc.Location = new System.Drawing.Point(235, 216);
+            this.panel_empleadorPanelDdlLoc.Name = "panel_empleadorPanelDdlLoc";
+            this.panel_empleadorPanelDdlLoc.Size = new System.Drawing.Size(253, 45);
+            this.panel_empleadorPanelDdlLoc.TabIndex = 5;
+            // 
+            // ddl_empleador_agregar_Loc
+            // 
+            this.ddl_empleador_agregar_Loc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleador_agregar_Loc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleador_agregar_Loc.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleador_agregar_Loc, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleador_agregar_Loc, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleador_agregar_Loc.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleador_agregar_Loc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleador_agregar_Loc.Items = new string[0];
+            this.ddl_empleador_agregar_Loc.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleador_agregar_Loc.Name = "ddl_empleador_agregar_Loc";
+            this.ddl_empleador_agregar_Loc.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleador_agregar_Loc.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleador_agregar_Loc.selectedIndex = -1;
+            this.ddl_empleador_agregar_Loc.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleador_agregar_Loc.TabIndex = 3;
+            // 
+            // panel_empleadorDdlProv
+            // 
+            this.panel_empleadorDdlProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel_empleadorDdlProv.Controls.Add(this.ddl_empleador_agregar_Prov);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_empleadorDdlProv, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_empleadorDdlProv, BunifuAnimatorNS.DecorationType.None);
+            this.panel_empleadorDdlProv.Location = new System.Drawing.Point(235, 168);
+            this.panel_empleadorDdlProv.Name = "panel_empleadorDdlProv";
+            this.panel_empleadorDdlProv.Size = new System.Drawing.Size(253, 45);
+            this.panel_empleadorDdlProv.TabIndex = 4;
+            // 
+            // ddl_empleador_agregar_Prov
+            // 
+            this.ddl_empleador_agregar_Prov.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleador_agregar_Prov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleador_agregar_Prov.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleador_agregar_Prov, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleador_agregar_Prov, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleador_agregar_Prov.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleador_agregar_Prov.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleador_agregar_Prov.Items = new string[0];
+            this.ddl_empleador_agregar_Prov.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleador_agregar_Prov.Name = "ddl_empleador_agregar_Prov";
+            this.ddl_empleador_agregar_Prov.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleador_agregar_Prov.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleador_agregar_Prov.selectedIndex = -1;
+            this.ddl_empleador_agregar_Prov.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleador_agregar_Prov.TabIndex = 3;
+            // 
+            // txt_empelador_agregar_Domicilio
+            // 
+            this.txt_empelador_agregar_Domicilio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empelador_agregar_Domicilio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empelador_agregar_Domicilio.BackgroundImage")));
+            this.txt_empelador_agregar_Domicilio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empelador_agregar_Domicilio, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empelador_agregar_Domicilio, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empelador_agregar_Domicilio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empelador_agregar_Domicilio.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empelador_agregar_Domicilio.Icon")));
+            this.txt_empelador_agregar_Domicilio.Location = new System.Drawing.Point(235, 120);
+            this.txt_empelador_agregar_Domicilio.Name = "txt_empelador_agregar_Domicilio";
+            this.txt_empelador_agregar_Domicilio.Size = new System.Drawing.Size(250, 42);
+            this.txt_empelador_agregar_Domicilio.TabIndex = 2;
+            this.txt_empelador_agregar_Domicilio.text = "Domicilio";
+            this.txt_empelador_agregar_Domicilio.Enter += new System.EventHandler(this.Txt_empeladorDomicilio_Enter);
+            this.txt_empelador_agregar_Domicilio.Leave += new System.EventHandler(this.Txt_empeladorDomicilio_Leave);
+            // 
+            // txt_empleador_agregar_Cuit
+            // 
+            this.txt_empleador_agregar_Cuit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleador_agregar_Cuit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleador_agregar_Cuit.BackgroundImage")));
+            this.txt_empleador_agregar_Cuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleador_agregar_Cuit, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleador_agregar_Cuit, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleador_agregar_Cuit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleador_agregar_Cuit.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleador_agregar_Cuit.Icon")));
+            this.txt_empleador_agregar_Cuit.Location = new System.Drawing.Point(235, 72);
+            this.txt_empleador_agregar_Cuit.Name = "txt_empleador_agregar_Cuit";
+            this.txt_empleador_agregar_Cuit.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleador_agregar_Cuit.TabIndex = 1;
+            this.txt_empleador_agregar_Cuit.text = "xx-xxxxxxxx-x";
+            this.txt_empleador_agregar_Cuit.Enter += new System.EventHandler(this.Txt_empleadorCuit_Enter);
+            this.txt_empleador_agregar_Cuit.Leave += new System.EventHandler(this.Txt_empleadorCuit_Leave);
+            // 
+            // txt_empleador_agregar_RazonSocial
+            // 
+            this.txt_empleador_agregar_RazonSocial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleador_agregar_RazonSocial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleador_agregar_RazonSocial.BackgroundImage")));
+            this.txt_empleador_agregar_RazonSocial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleador_agregar_RazonSocial, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleador_agregar_RazonSocial, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleador_agregar_RazonSocial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleador_agregar_RazonSocial.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleador_agregar_RazonSocial.Icon")));
+            this.txt_empleador_agregar_RazonSocial.Location = new System.Drawing.Point(235, 24);
+            this.txt_empleador_agregar_RazonSocial.Name = "txt_empleador_agregar_RazonSocial";
+            this.txt_empleador_agregar_RazonSocial.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleador_agregar_RazonSocial.TabIndex = 0;
+            this.txt_empleador_agregar_RazonSocial.text = "Razon Social";
+            this.txt_empleador_agregar_RazonSocial.Enter += new System.EventHandler(this.Txt_empleadorRazonSocial_Enter);
+            this.txt_empleador_agregar_RazonSocial.Leave += new System.EventHandler(this.Txt_empleadorRazonSocial_Leave);
             // 
             // salir
             // 
@@ -524,7 +774,7 @@
             // panel_central
             // 
             this.panel_central.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.panel_central.Controls.Add(this.panel_agregarEmpleador);
+            this.panel_central.Controls.Add(this.panel_agregarEmpleado);
             this.panel_central.Controls.Add(this.panel_subTitulo);
             this.transition_sidebarAbrir.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
             this.transition_sidebarCerrar.SetDecoration(this.panel_central, BunifuAnimatorNS.DecorationType.None);
@@ -534,208 +784,404 @@
             this.panel_central.Size = new System.Drawing.Size(740, 601);
             this.panel_central.TabIndex = 3;
             // 
-            // panel_agregarEmpleador
+            // panel_agregarEmpleado
             // 
-            this.panel_agregarEmpleador.Controls.Add(this.btn_AgregarEmpleadorBase);
-            this.panel_agregarEmpleador.Controls.Add(this.label5);
-            this.panel_agregarEmpleador.Controls.Add(this.label4);
-            this.panel_agregarEmpleador.Controls.Add(this.label3);
-            this.panel_agregarEmpleador.Controls.Add(this.label2);
-            this.panel_agregarEmpleador.Controls.Add(this.label1);
-            this.panel_agregarEmpleador.Controls.Add(this.panel_empleadorPanelDdlLoc);
-            this.panel_agregarEmpleador.Controls.Add(this.panel_empleadorDdlProv);
-            this.panel_agregarEmpleador.Controls.Add(this.txt_empeladorDomicilio);
-            this.panel_agregarEmpleador.Controls.Add(this.txt_empleadorCuit);
-            this.panel_agregarEmpleador.Controls.Add(this.txt_empleadorRazonSocial);
-            this.transition_sidebarAbrir.SetDecoration(this.panel_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarCerrar.SetDecoration(this.panel_agregarEmpleador, BunifuAnimatorNS.DecorationType.None);
-            this.panel_agregarEmpleador.Location = new System.Drawing.Point(6, 56);
-            this.panel_agregarEmpleador.Name = "panel_agregarEmpleador";
-            this.panel_agregarEmpleador.Size = new System.Drawing.Size(725, 535);
-            this.panel_agregarEmpleador.TabIndex = 1;
+            this.panel_agregarEmpleado.Controls.Add(this.label15);
+            this.panel_agregarEmpleado.Controls.Add(this.panel1);
+            this.panel_agregarEmpleado.Controls.Add(this.label14);
+            this.panel_agregarEmpleado.Controls.Add(this.label13);
+            this.panel_agregarEmpleado.Controls.Add(this.label12);
+            this.panel_agregarEmpleado.Controls.Add(this.panel4);
+            this.panel_agregarEmpleado.Controls.Add(this.label11);
+            this.panel_agregarEmpleado.Controls.Add(this.txt_empleado_agregar_ObraSocial);
+            this.panel_agregarEmpleado.Controls.Add(this.txt_empleado_agregar_Legajo);
+            this.panel_agregarEmpleado.Controls.Add(this.txt_empleado_agregar_Categoria);
+            this.panel_agregarEmpleado.Controls.Add(this.btn__empleado_agregar_agregarBase);
+            this.panel_agregarEmpleado.Controls.Add(this.label6);
+            this.panel_agregarEmpleado.Controls.Add(this.label7);
+            this.panel_agregarEmpleado.Controls.Add(this.label8);
+            this.panel_agregarEmpleado.Controls.Add(this.label9);
+            this.panel_agregarEmpleado.Controls.Add(this.label10);
+            this.panel_agregarEmpleado.Controls.Add(this.panel2);
+            this.panel_agregarEmpleado.Controls.Add(this.panel3);
+            this.panel_agregarEmpleado.Controls.Add(this.txt_empleado_agregar_CUIL);
+            this.panel_agregarEmpleado.Controls.Add(this.txt_empleado_agregar_Apellido);
+            this.panel_agregarEmpleado.Controls.Add(this.txt_empleado_agregar_Nombre);
+            this.transition_sidebarAbrir.SetDecoration(this.panel_agregarEmpleado, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel_agregarEmpleado, BunifuAnimatorNS.DecorationType.None);
+            this.panel_agregarEmpleado.Location = new System.Drawing.Point(15, 63);
+            this.panel_agregarEmpleado.Name = "panel_agregarEmpleado";
+            this.panel_agregarEmpleado.Size = new System.Drawing.Size(725, 535);
+            this.panel_agregarEmpleado.TabIndex = 12;
             // 
-            // label5
+            // label15
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.transition_sidebarCerrar.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label5.Location = new System.Drawing.Point(131, 225);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 25);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Localidad:";
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
+            this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label15.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label15.Location = new System.Drawing.Point(76, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(110, 25);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Empleador:";
             // 
-            // label4
+            // panel1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.transition_sidebarCerrar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label4.Location = new System.Drawing.Point(130, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Provincia:";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.ddl_empleado_agregar_empleador);
+            this.transition_sidebarAbrir.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(192, 19);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(253, 45);
+            this.panel1.TabIndex = 20;
             // 
-            // label3
+            // ddl_empleado_agregar_empleador
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.transition_sidebarCerrar.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(130, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Domicilio:";
+            this.ddl_empleado_agregar_empleador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleado_agregar_empleador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleado_agregar_empleador.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleado_agregar_empleador, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleado_agregar_empleador, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleado_agregar_empleador.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleado_agregar_empleador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleado_agregar_empleador.Items = new string[0];
+            this.ddl_empleado_agregar_empleador.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleado_agregar_empleador.Name = "ddl_empleado_agregar_empleador";
+            this.ddl_empleado_agregar_empleador.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleado_agregar_empleador.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleado_agregar_empleador.selectedIndex = -1;
+            this.ddl_empleado_agregar_empleador.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleado_agregar_empleador.TabIndex = 3;
             // 
-            // label2
+            // label14
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.transition_sidebarCerrar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label2.Location = new System.Drawing.Point(173, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "CUIT:";
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label14.Location = new System.Drawing.Point(87, 369);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(104, 25);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Categoria:";
             // 
-            // label1
+            // label13
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.transition_sidebarCerrar.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(98, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Razon Social: ";
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label13.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label13.Location = new System.Drawing.Point(116, 324);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(74, 25);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Legajo:";
             // 
-            // panel_empleadorPanelDdlLoc
+            // label12
             // 
-            this.panel_empleadorPanelDdlLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.panel_empleadorPanelDdlLoc.Controls.Add(this.ddl_empleadorLoc);
-            this.transition_sidebarAbrir.SetDecoration(this.panel_empleadorPanelDdlLoc, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarCerrar.SetDecoration(this.panel_empleadorPanelDdlLoc, BunifuAnimatorNS.DecorationType.None);
-            this.panel_empleadorPanelDdlLoc.Location = new System.Drawing.Point(235, 216);
-            this.panel_empleadorPanelDdlLoc.Name = "panel_empleadorPanelDdlLoc";
-            this.panel_empleadorPanelDdlLoc.Size = new System.Drawing.Size(253, 45);
-            this.panel_empleadorPanelDdlLoc.TabIndex = 5;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label12.Location = new System.Drawing.Point(73, 275);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(117, 25);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Obra Social:";
             // 
-            // ddl_empleadorLoc
+            // panel4
             // 
-            this.ddl_empleadorLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_empleadorLoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ddl_empleadorLoc.BorderRadius = 0;
-            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleadorLoc, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleadorLoc, BunifuAnimatorNS.DecorationType.None);
-            this.ddl_empleadorLoc.DisabledColor = System.Drawing.SystemColors.GrayText;
-            this.ddl_empleadorLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_empleadorLoc.Items = new string[0];
-            this.ddl_empleadorLoc.Location = new System.Drawing.Point(3, 3);
-            this.ddl_empleadorLoc.Name = "ddl_empleadorLoc";
-            this.ddl_empleadorLoc.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_empleadorLoc.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_empleadorLoc.selectedIndex = -1;
-            this.ddl_empleadorLoc.Size = new System.Drawing.Size(248, 40);
-            this.ddl_empleadorLoc.TabIndex = 3;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel4.Controls.Add(this.date_empleado_agregar_Fechadeinicio);
+            this.transition_sidebarAbrir.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panel4.Location = new System.Drawing.Point(191, 216);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(252, 42);
+            this.panel4.TabIndex = 6;
             // 
-            // panel_empleadorDdlProv
+            // date_empleado_agregar_Fechadeinicio
             // 
-            this.panel_empleadorDdlProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.panel_empleadorDdlProv.Controls.Add(this.ddl_empleadorProv);
-            this.transition_sidebarAbrir.SetDecoration(this.panel_empleadorDdlProv, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarCerrar.SetDecoration(this.panel_empleadorDdlProv, BunifuAnimatorNS.DecorationType.None);
-            this.panel_empleadorDdlProv.Location = new System.Drawing.Point(235, 168);
-            this.panel_empleadorDdlProv.Name = "panel_empleadorDdlProv";
-            this.panel_empleadorDdlProv.Size = new System.Drawing.Size(253, 45);
-            this.panel_empleadorDdlProv.TabIndex = 4;
+            this.date_empleado_agregar_Fechadeinicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.date_empleado_agregar_Fechadeinicio.BorderRadius = 0;
+            this.transition_sidebarAbrir.SetDecoration(this.date_empleado_agregar_Fechadeinicio, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.date_empleado_agregar_Fechadeinicio, BunifuAnimatorNS.DecorationType.None);
+            this.date_empleado_agregar_Fechadeinicio.ForeColor = System.Drawing.Color.White;
+            this.date_empleado_agregar_Fechadeinicio.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date_empleado_agregar_Fechadeinicio.FormatCustom = null;
+            this.date_empleado_agregar_Fechadeinicio.Location = new System.Drawing.Point(3, 3);
+            this.date_empleado_agregar_Fechadeinicio.Name = "date_empleado_agregar_Fechadeinicio";
+            this.date_empleado_agregar_Fechadeinicio.Size = new System.Drawing.Size(248, 37);
+            this.date_empleado_agregar_Fechadeinicio.TabIndex = 15;
+            this.date_empleado_agregar_Fechadeinicio.Value = new System.DateTime(2020, 4, 25, 22, 39, 2, 385);
             // 
-            // ddl_empleadorProv
+            // label11
             // 
-            this.ddl_empleadorProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_empleadorProv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ddl_empleadorProv.BorderRadius = 0;
-            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleadorProv, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleadorProv, BunifuAnimatorNS.DecorationType.None);
-            this.ddl_empleadorProv.DisabledColor = System.Drawing.SystemColors.GrayText;
-            this.ddl_empleadorProv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_empleadorProv.Items = new string[0];
-            this.ddl_empleadorProv.Location = new System.Drawing.Point(3, 3);
-            this.ddl_empleadorProv.Name = "ddl_empleadorProv";
-            this.ddl_empleadorProv.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_empleadorProv.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_empleadorProv.selectedIndex = -1;
-            this.ddl_empleadorProv.Size = new System.Drawing.Size(248, 40);
-            this.ddl_empleadorProv.TabIndex = 3;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label11.Location = new System.Drawing.Point(43, 225);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(147, 25);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Fecha de Inicio:";
             // 
-            // txt_empeladorDomicilio
+            // txt_empleado_agregar_ObraSocial
             // 
-            this.txt_empeladorDomicilio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.txt_empeladorDomicilio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empeladorDomicilio.BackgroundImage")));
-            this.txt_empeladorDomicilio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.transition_sidebarAbrir.SetDecoration(this.txt_empeladorDomicilio, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarCerrar.SetDecoration(this.txt_empeladorDomicilio, BunifuAnimatorNS.DecorationType.None);
-            this.txt_empeladorDomicilio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.txt_empeladorDomicilio.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empeladorDomicilio.Icon")));
-            this.txt_empeladorDomicilio.Location = new System.Drawing.Point(235, 120);
-            this.txt_empeladorDomicilio.Name = "txt_empeladorDomicilio";
-            this.txt_empeladorDomicilio.Size = new System.Drawing.Size(250, 42);
-            this.txt_empeladorDomicilio.TabIndex = 2;
-            this.txt_empeladorDomicilio.text = "Domicilio";
-            this.txt_empeladorDomicilio.Enter += new System.EventHandler(this.Txt_empeladorDomicilio_Enter);
-            this.txt_empeladorDomicilio.Leave += new System.EventHandler(this.Txt_empeladorDomicilio_Leave);
+            this.txt_empleado_agregar_ObraSocial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleado_agregar_ObraSocial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_ObraSocial.BackgroundImage")));
+            this.txt_empleado_agregar_ObraSocial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleado_agregar_ObraSocial, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleado_agregar_ObraSocial, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleado_agregar_ObraSocial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleado_agregar_ObraSocial.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_ObraSocial.Icon")));
+            this.txt_empleado_agregar_ObraSocial.Location = new System.Drawing.Point(192, 265);
+            this.txt_empleado_agregar_ObraSocial.Name = "txt_empleado_agregar_ObraSocial";
+            this.txt_empleado_agregar_ObraSocial.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleado_agregar_ObraSocial.TabIndex = 14;
+            this.txt_empleado_agregar_ObraSocial.text = "";
             // 
-            // txt_empleadorCuit
+            // txt_empleado_agregar_Legajo
             // 
-            this.txt_empleadorCuit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.txt_empleadorCuit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleadorCuit.BackgroundImage")));
-            this.txt_empleadorCuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.transition_sidebarAbrir.SetDecoration(this.txt_empleadorCuit, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarCerrar.SetDecoration(this.txt_empleadorCuit, BunifuAnimatorNS.DecorationType.None);
-            this.txt_empleadorCuit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.txt_empleadorCuit.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleadorCuit.Icon")));
-            this.txt_empleadorCuit.Location = new System.Drawing.Point(235, 72);
-            this.txt_empleadorCuit.Name = "txt_empleadorCuit";
-            this.txt_empleadorCuit.Size = new System.Drawing.Size(250, 42);
-            this.txt_empleadorCuit.TabIndex = 1;
-            this.txt_empleadorCuit.text = "xx-xxxxxxxx-x";
-            this.txt_empleadorCuit.Enter += new System.EventHandler(this.Txt_empleadorCuit_Enter);
-            this.txt_empleadorCuit.Leave += new System.EventHandler(this.Txt_empleadorCuit_Leave);
+            this.txt_empleado_agregar_Legajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleado_agregar_Legajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Legajo.BackgroundImage")));
+            this.txt_empleado_agregar_Legajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleado_agregar_Legajo, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleado_agregar_Legajo, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleado_agregar_Legajo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleado_agregar_Legajo.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Legajo.Icon")));
+            this.txt_empleado_agregar_Legajo.Location = new System.Drawing.Point(192, 313);
+            this.txt_empleado_agregar_Legajo.Name = "txt_empleado_agregar_Legajo";
+            this.txt_empleado_agregar_Legajo.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleado_agregar_Legajo.TabIndex = 13;
+            this.txt_empleado_agregar_Legajo.text = "";
             // 
-            // txt_empleadorRazonSocial
+            // txt_empleado_agregar_Categoria
             // 
-            this.txt_empleadorRazonSocial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.txt_empleadorRazonSocial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleadorRazonSocial.BackgroundImage")));
-            this.txt_empleadorRazonSocial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.transition_sidebarAbrir.SetDecoration(this.txt_empleadorRazonSocial, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarCerrar.SetDecoration(this.txt_empleadorRazonSocial, BunifuAnimatorNS.DecorationType.None);
-            this.txt_empleadorRazonSocial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.txt_empleadorRazonSocial.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleadorRazonSocial.Icon")));
-            this.txt_empleadorRazonSocial.Location = new System.Drawing.Point(235, 24);
-            this.txt_empleadorRazonSocial.Name = "txt_empleadorRazonSocial";
-            this.txt_empleadorRazonSocial.Size = new System.Drawing.Size(250, 42);
-            this.txt_empleadorRazonSocial.TabIndex = 0;
-            this.txt_empleadorRazonSocial.text = "Razon Social";
-            this.txt_empleadorRazonSocial.Enter += new System.EventHandler(this.Txt_empleadorRazonSocial_Enter);
-            this.txt_empleadorRazonSocial.Leave += new System.EventHandler(this.Txt_empleadorRazonSocial_Leave);
+            this.txt_empleado_agregar_Categoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleado_agregar_Categoria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Categoria.BackgroundImage")));
+            this.txt_empleado_agregar_Categoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleado_agregar_Categoria, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleado_agregar_Categoria, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleado_agregar_Categoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleado_agregar_Categoria.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Categoria.Icon")));
+            this.txt_empleado_agregar_Categoria.Location = new System.Drawing.Point(192, 361);
+            this.txt_empleado_agregar_Categoria.Name = "txt_empleado_agregar_Categoria";
+            this.txt_empleado_agregar_Categoria.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleado_agregar_Categoria.TabIndex = 12;
+            this.txt_empleado_agregar_Categoria.text = "";
+            // 
+            // btn__empleado_agregar_agregarBase
+            // 
+            this.transition_sidebarCerrar.SetDecoration(this.btn__empleado_agregar_agregarBase, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.btn__empleado_agregar_agregarBase, BunifuAnimatorNS.DecorationType.None);
+            this.btn__empleado_agregar_agregarBase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.btn__empleado_agregar_agregarBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn__empleado_agregar_agregarBase.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__empleado_agregar_agregarBase.ForeColor = System.Drawing.Color.White;
+            this.btn__empleado_agregar_agregarBase.Location = new System.Drawing.Point(463, 256);
+            this.btn__empleado_agregar_agregarBase.Name = "btn__empleado_agregar_agregarBase";
+            this.btn__empleado_agregar_agregarBase.Size = new System.Drawing.Size(250, 45);
+            this.btn__empleado_agregar_agregarBase.TabIndex = 11;
+            this.btn__empleado_agregar_agregarBase.Text = "Agregar Empleado";
+            this.btn__empleado_agregar_agregarBase.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label6.Location = new System.Drawing.Point(90, 474);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 25);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Localidad:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label7.Location = new System.Drawing.Point(93, 420);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 25);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Provincia:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label8.Location = new System.Drawing.Point(135, 175);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 25);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "CUIL:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label9.Location = new System.Drawing.Point(104, 128);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 25);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Apellido:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.transition_sidebarCerrar.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
+            this.label10.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.label10.Location = new System.Drawing.Point(105, 80);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 25);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Nombre:";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel2.Controls.Add(this.ddl_empleado_agregar_Localidad);
+            this.transition_sidebarAbrir.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Location = new System.Drawing.Point(191, 464);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(253, 45);
+            this.panel2.TabIndex = 5;
+            // 
+            // ddl_empleado_agregar_Localidad
+            // 
+            this.ddl_empleado_agregar_Localidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleado_agregar_Localidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleado_agregar_Localidad.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleado_agregar_Localidad, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleado_agregar_Localidad, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleado_agregar_Localidad.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleado_agregar_Localidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleado_agregar_Localidad.Items = new string[0];
+            this.ddl_empleado_agregar_Localidad.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleado_agregar_Localidad.Name = "ddl_empleado_agregar_Localidad";
+            this.ddl_empleado_agregar_Localidad.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleado_agregar_Localidad.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleado_agregar_Localidad.selectedIndex = -1;
+            this.ddl_empleado_agregar_Localidad.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleado_agregar_Localidad.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.panel3.Controls.Add(this.ddl_empleado_agregar_Provincia);
+            this.transition_sidebarAbrir.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.panel3.Location = new System.Drawing.Point(191, 411);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(253, 45);
+            this.panel3.TabIndex = 4;
+            // 
+            // ddl_empleado_agregar_Provincia
+            // 
+            this.ddl_empleado_agregar_Provincia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleado_agregar_Provincia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ddl_empleado_agregar_Provincia.BorderRadius = 0;
+            this.transition_sidebarCerrar.SetDecoration(this.ddl_empleado_agregar_Provincia, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarAbrir.SetDecoration(this.ddl_empleado_agregar_Provincia, BunifuAnimatorNS.DecorationType.None);
+            this.ddl_empleado_agregar_Provincia.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.ddl_empleado_agregar_Provincia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.ddl_empleado_agregar_Provincia.Items = new string[0];
+            this.ddl_empleado_agregar_Provincia.Location = new System.Drawing.Point(3, 3);
+            this.ddl_empleado_agregar_Provincia.Name = "ddl_empleado_agregar_Provincia";
+            this.ddl_empleado_agregar_Provincia.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleado_agregar_Provincia.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ddl_empleado_agregar_Provincia.selectedIndex = -1;
+            this.ddl_empleado_agregar_Provincia.Size = new System.Drawing.Size(248, 40);
+            this.ddl_empleado_agregar_Provincia.TabIndex = 3;
+            // 
+            // txt_empleado_agregar_CUIL
+            // 
+            this.txt_empleado_agregar_CUIL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleado_agregar_CUIL.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_CUIL.BackgroundImage")));
+            this.txt_empleado_agregar_CUIL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleado_agregar_CUIL, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleado_agregar_CUIL, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleado_agregar_CUIL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleado_agregar_CUIL.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_CUIL.Icon")));
+            this.txt_empleado_agregar_CUIL.Location = new System.Drawing.Point(192, 168);
+            this.txt_empleado_agregar_CUIL.Name = "txt_empleado_agregar_CUIL";
+            this.txt_empleado_agregar_CUIL.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleado_agregar_CUIL.TabIndex = 2;
+            this.txt_empleado_agregar_CUIL.text = "xx-xxxxxxxx-x";
+            this.txt_empleado_agregar_CUIL.Enter += new System.EventHandler(this.Txt_empleado_agregar_CUIL_Enter);
+            this.txt_empleado_agregar_CUIL.Leave += new System.EventHandler(this.Txt_empleado_agregar_CUIL_Leave);
+            // 
+            // txt_empleado_agregar_Apellido
+            // 
+            this.txt_empleado_agregar_Apellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleado_agregar_Apellido.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Apellido.BackgroundImage")));
+            this.txt_empleado_agregar_Apellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleado_agregar_Apellido, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleado_agregar_Apellido, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleado_agregar_Apellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleado_agregar_Apellido.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Apellido.Icon")));
+            this.txt_empleado_agregar_Apellido.Location = new System.Drawing.Point(192, 120);
+            this.txt_empleado_agregar_Apellido.Name = "txt_empleado_agregar_Apellido";
+            this.txt_empleado_agregar_Apellido.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleado_agregar_Apellido.TabIndex = 1;
+            this.txt_empleado_agregar_Apellido.text = "";
+            // 
+            // txt_empleado_agregar_Nombre
+            // 
+            this.txt_empleado_agregar_Nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.txt_empleado_agregar_Nombre.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Nombre.BackgroundImage")));
+            this.txt_empleado_agregar_Nombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transition_sidebarAbrir.SetDecoration(this.txt_empleado_agregar_Nombre, BunifuAnimatorNS.DecorationType.None);
+            this.transition_sidebarCerrar.SetDecoration(this.txt_empleado_agregar_Nombre, BunifuAnimatorNS.DecorationType.None);
+            this.txt_empleado_agregar_Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.txt_empleado_agregar_Nombre.Icon = ((System.Drawing.Image)(resources.GetObject("txt_empleado_agregar_Nombre.Icon")));
+            this.txt_empleado_agregar_Nombre.Location = new System.Drawing.Point(192, 72);
+            this.txt_empleado_agregar_Nombre.Name = "txt_empleado_agregar_Nombre";
+            this.txt_empleado_agregar_Nombre.Size = new System.Drawing.Size(250, 42);
+            this.txt_empleado_agregar_Nombre.TabIndex = 0;
+            this.txt_empleado_agregar_Nombre.text = "";
             // 
             // panel_subTitulo
             // 
@@ -790,44 +1236,44 @@
             // 
             this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transition_sidebarCerrar.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 1F;
-            this.transition_sidebarCerrar.DefaultAnimation = animation5;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.transition_sidebarCerrar.DefaultAnimation = animation3;
             this.transition_sidebarCerrar.Interval = 15;
             // 
             // transition_sidebarAbrir
             // 
             this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.transition_sidebarAbrir.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.transition_sidebarAbrir.DefaultAnimation = animation6;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.transition_sidebarAbrir.DefaultAnimation = animation4;
             this.transition_sidebarAbrir.Interval = 15;
             // 
             // MoverVentana
@@ -850,7 +1296,7 @@
             // elipse_empleadorDdlProv
             // 
             this.elipse_empleadorDdlProv.ElipseRadius = 10;
-            this.elipse_empleadorDdlProv.TargetControl = this.ddl_empleadorProv;
+            this.elipse_empleadorDdlProv.TargetControl = this.ddl_empleador_agregar_Prov;
             // 
             // elipse_empleadorPanelDdlLoc
             // 
@@ -860,22 +1306,7 @@
             // elipse_empleadorDdlLoc
             // 
             this.elipse_empleadorDdlLoc.ElipseRadius = 7;
-            this.elipse_empleadorDdlLoc.TargetControl = this.ddl_empleadorLoc;
-            // 
-            // btn_AgregarEmpleadorBase
-            // 
-            this.transition_sidebarCerrar.SetDecoration(this.btn_AgregarEmpleadorBase, BunifuAnimatorNS.DecorationType.None);
-            this.transition_sidebarAbrir.SetDecoration(this.btn_AgregarEmpleadorBase, BunifuAnimatorNS.DecorationType.None);
-            this.btn_AgregarEmpleadorBase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.btn_AgregarEmpleadorBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AgregarEmpleadorBase.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AgregarEmpleadorBase.ForeColor = System.Drawing.Color.White;
-            this.btn_AgregarEmpleadorBase.Location = new System.Drawing.Point(235, 291);
-            this.btn_AgregarEmpleadorBase.Name = "btn_AgregarEmpleadorBase";
-            this.btn_AgregarEmpleadorBase.Size = new System.Drawing.Size(250, 45);
-            this.btn_AgregarEmpleadorBase.TabIndex = 11;
-            this.btn_AgregarEmpleadorBase.Text = "Agregar Empleador";
-            this.btn_AgregarEmpleadorBase.UseVisualStyleBackColor = true;
+            this.elipse_empleadorDdlLoc.TargetControl = this.ddl_empleador_agregar_Loc;
             // 
             // Form1
             // 
@@ -894,6 +1325,10 @@
             this.Text = "Form1";
             this.panel_menuTop.ResumeLayout(false);
             this.panel_menuTop.PerformLayout();
+            this.panel_agregarEmpleador.ResumeLayout(false);
+            this.panel_agregarEmpleador.PerformLayout();
+            this.panel_empleadorPanelDdlLoc.ResumeLayout(false);
+            this.panel_empleadorDdlProv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picb_dashboard)).EndInit();
             this.panel_sidebarWrapper.ResumeLayout(false);
             this.panel_sidebar.ResumeLayout(false);
@@ -905,10 +1340,12 @@
             this.panel_logo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_formum)).EndInit();
             this.panel_central.ResumeLayout(false);
-            this.panel_agregarEmpleador.ResumeLayout(false);
-            this.panel_agregarEmpleador.PerformLayout();
-            this.panel_empleadorPanelDdlLoc.ResumeLayout(false);
-            this.panel_empleadorDdlProv.ResumeLayout(false);
+            this.panel_agregarEmpleado.ResumeLayout(false);
+            this.panel_agregarEmpleado.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel_subTitulo.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
@@ -951,15 +1388,15 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuElipse elipse_subtitulo;
         private System.Windows.Forms.Panel panel_agregarEmpleador;
-        private Bunifu.Framework.UI.BunifuTextbox txt_empleadorRazonSocial;
-        private Bunifu.Framework.UI.BunifuTextbox txt_empleadorCuit;
-        private Bunifu.Framework.UI.BunifuTextbox txt_empeladorDomicilio;
-        private Bunifu.Framework.UI.BunifuDropdown ddl_empleadorProv;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleador_agregar_RazonSocial;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleador_agregar_Cuit;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empelador_agregar_Domicilio;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleador_agregar_Prov;
         private System.Windows.Forms.Panel panel_empleadorDdlProv;
         private Bunifu.Framework.UI.BunifuElipse elipse_empleadorPanelDdlProv;
         private Bunifu.Framework.UI.BunifuElipse elipse_empleadorDdlProv;
         private System.Windows.Forms.Panel panel_empleadorPanelDdlLoc;
-        private Bunifu.Framework.UI.BunifuDropdown ddl_empleadorLoc;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleador_agregar_Loc;
         private Bunifu.Framework.UI.BunifuElipse elipse_empleadorPanelDdlLoc;
         private Bunifu.Framework.UI.BunifuElipse elipse_empleadorDdlLoc;
         private System.Windows.Forms.Label lbl_subtitulo;
@@ -968,7 +1405,33 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_AgregarEmpleadorBase;
+        private System.Windows.Forms.Button btn_empleador_agregar_agregarBase;
+        private System.Windows.Forms.Panel panel_agregarEmpleado;
+        private Bunifu.Framework.UI.BunifuDatepicker date_empleado_agregar_Fechadeinicio;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleado_agregar_ObraSocial;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleado_agregar_Legajo;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleado_agregar_Categoria;
+        private System.Windows.Forms.Button btn__empleado_agregar_agregarBase;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleado_agregar_Localidad;
+        private System.Windows.Forms.Panel panel3;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleado_agregar_Provincia;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleado_agregar_CUIL;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleado_agregar_Apellido;
+        private Bunifu.Framework.UI.BunifuTextbox txt_empleado_agregar_Nombre;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuDropdown ddl_empleado_agregar_empleador;
     }
 }
 
