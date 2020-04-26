@@ -110,14 +110,14 @@ namespace ProyectoMama
 
         private void Txt_empleadorCuit_Enter(object sender, EventArgs e)
         {
-            if (txt_empleadorCuit.text == "CUIT")
+            if (txt_empleadorCuit.text == "xx-xxxxxxxx-x")
                 txt_empleadorCuit.text = string.Empty;
         }
 
         private void Txt_empleadorCuit_Leave(object sender, EventArgs e)
         {
             if (txt_empleadorCuit.text == "")
-                txt_empleadorCuit.text = "CUIT";
+                txt_empleadorCuit.text = "xx-xxxxxxxx-x";
         }
 
         private void Txt_empeladorDomicilio_Enter(object sender, EventArgs e)
