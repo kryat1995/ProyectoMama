@@ -12,6 +12,7 @@ namespace ProyectoMama
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -132,15 +133,10 @@ namespace ProyectoMama
                 txt_empelador_agregar_Domicilio.text = "Domicilio";
         }
 
-        private void Btn_agregarEmpleador_Click(object sender, EventArgs e)
-        {
-            lbl_subtitulo.Text = "Agregar Empleador";
-        }
-
         private void Txt_empleado_agregar_CUIL_Enter(object sender, EventArgs e)
         {
             if (txt_empleado_agregar_CUIL.text == "xx-xxxxxxxx-x")
-                txt_empleado_agregar_CUIL.text = string.Empty;
+               txt_empleado_agregar_CUIL.text = string.Empty;
         }
 
         private void Txt_empleado_agregar_CUIL_Leave(object sender, EventArgs e)
@@ -149,5 +145,41 @@ namespace ProyectoMama
                 txt_empleado_agregar_CUIL.text = "xx-xxxxxxxx-x";
         }
 
+        private void Btn_agregarEmpleados_Click(object sender, EventArgs e)
+        {
+            lbl_subtitulo.Text = "Agregar Empleado";
+            panel_empleado_agregar.Visible = true;
+            panel_empleador_agregar.Visible = false;
+            panel_Empleador_Editar.Visible = false;
+            panel_empleado_editar.Visible = false;
+
+        }
+        private void Btn_agregarEmpleador_Click(object sender, EventArgs e)
+        {
+            lbl_subtitulo.Text = "Agregar Empleador";
+            panel_empleado_agregar.Visible = false;
+            panel_empleador_agregar.Visible = true;
+            panel_Empleador_Editar.Visible = false;
+            panel_empleado_editar.Visible = false;
+
+        }
+
+        private void Btn_editarEmpleador_Click(object sender, EventArgs e)
+        {
+            lbl_subtitulo.Text = "Editar Empleador";
+            panel_Empleador_Editar.Visible = true;
+            panel_empleado_agregar.Visible = false;
+            panel_empleador_agregar.Visible = false;
+            panel_empleado_editar.Visible = false;
+        }
+
+        private void Btn_editarEmpleados_Click(object sender, EventArgs e)
+        {
+            lbl_subtitulo.Text = "Editar Empleador";
+            panel_Empleador_Editar.Visible = false;
+            panel_empleado_agregar.Visible = false;
+            panel_empleador_agregar.Visible = false;
+            panel_empleado_editar.Visible = true;
+        }
     }
 }
