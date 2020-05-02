@@ -56,16 +56,52 @@
     <Compile Include="Clases\GestionEmpleados.cs" />
     <Compile Include="Clases\GestionLocalidades.cs" />
     <Compile Include="Clases\GestionProvincias.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="forms\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Empleadores_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Empleadores_Editar.Designer.cs">
+      <DependentUpon>Form_Empleadores_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Empleadores_Agregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Empleadores_Agregar.Designer.cs">
+      <DependentUpon>Form_Empleadores_Agregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Empleados_Agregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Empleados_Agregar.Designer.cs">
+      <DependentUpon>Form_Empleados_Agregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Empleados_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Empleados_Editar.Designer.cs">
+      <DependentUpon>Form_Empleados_Editar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="forms\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Empleadores_Editar.resx">
+      <DependentUpon>Form_Empleadores_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Empleadores_Agregar.resx">
+      <DependentUpon>Form_Empleadores_Agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Empleados_Agregar.resx">
+      <DependentUpon>Form_Empleados_Agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Empleados_Editar.resx">
+      <DependentUpon>Form_Empleados_Editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

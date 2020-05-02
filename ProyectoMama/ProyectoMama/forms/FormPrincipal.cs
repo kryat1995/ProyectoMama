@@ -10,10 +10,15 @@ using System.Windows.Forms;
 
 namespace ProyectoMama
 {
-    public partial class Form1 : Form
+
+    public partial class FormPrincipal : Form
     {
-        
-        public Form1()
+        Form_Empleadores_Agregar form_empleadores_agregar = new Form_Empleadores_Agregar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Form_Empleadores_Editar form_empleadores_editar = new Form_Empleadores_Editar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Form_Empleados_Agregar form_empleados_agregar = new Form_Empleados_Agregar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Form_Empleados_Editar form_empleados_editar = new Form_Empleados_Editar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+        public FormPrincipal()
         {
             InitializeComponent();
         }
@@ -97,89 +102,31 @@ namespace ProyectoMama
             }
         }
 
-        private void Txt_empleadorRazonSocial_Enter(object sender, EventArgs e)
-        {
-            if (txt_empleador_agregar_RazonSocial.text == "Razon Social")
-                txt_empleador_agregar_RazonSocial.text = string.Empty;
-        }
-
-        private void Txt_empleadorRazonSocial_Leave(object sender, EventArgs e)
-        {
-            if (txt_empleador_agregar_RazonSocial.text == "")
-                txt_empleador_agregar_RazonSocial.text = "Razon Social";
-        }
-
-        private void Txt_empleadorCuit_Enter(object sender, EventArgs e)
-        {
-            if (txt_empleador_agregar_Cuit.text == "xx-xxxxxxxx-x")
-                txt_empleador_agregar_Cuit.text = string.Empty;
-        }
-
-        private void Txt_empleadorCuit_Leave(object sender, EventArgs e)
-        {
-            if (txt_empleador_agregar_Cuit.text == "")
-                txt_empleador_agregar_Cuit.text = "xx-xxxxxxxx-x";
-        }
-
-        private void Txt_empeladorDomicilio_Enter(object sender, EventArgs e)
-        {
-            if (txt_empelador_agregar_Domicilio.text == "Domicilio")
-                txt_empelador_agregar_Domicilio.text = string.Empty;
-        }
-
-        private void Txt_empeladorDomicilio_Leave(object sender, EventArgs e)
-        {
-            if (txt_empelador_agregar_Domicilio.text == "")
-                txt_empelador_agregar_Domicilio.text = "Domicilio";
-        }
-
-        private void Txt_empleado_agregar_CUIL_Enter(object sender, EventArgs e)
-        {
-            if (txt_empleado_agregar_CUIL.text == "xx-xxxxxxxx-x")
-               txt_empleado_agregar_CUIL.text = string.Empty;
-        }
-
-        private void Txt_empleado_agregar_CUIL_Leave(object sender, EventArgs e)
-        {
-            if (txt_empleado_agregar_CUIL.text == "")
-                txt_empleado_agregar_CUIL.text = "xx-xxxxxxxx-x";
-        }
-
         private void Btn_agregarEmpleados_Click(object sender, EventArgs e)
         {
-            lbl_subtitulo.Text = "Agregar Empleado";
-            panel_empleado_agregar.Visible = true;
-            panel_empleador_agregar.Visible = false;
-            panel_Empleador_Editar.Visible = false;
-            panel_empleado_editar.Visible = false;
-
+            panel_central.Controls.Clear();
+            this.panel_central.Controls.Add(form_empleados_agregar);
+            form_empleados_agregar.Show();
         }
         private void Btn_agregarEmpleador_Click(object sender, EventArgs e)
         {
-            lbl_subtitulo.Text = "Agregar Empleador";
-            panel_empleado_agregar.Visible = false;
-            panel_empleador_agregar.Visible = true;
-            panel_Empleador_Editar.Visible = false;
-            panel_empleado_editar.Visible = false;
-
+            panel_central.Controls.Clear();
+            this.panel_central.Controls.Add(form_empleadores_agregar);
+            form_empleadores_agregar.Show();
         }
 
         private void Btn_editarEmpleador_Click(object sender, EventArgs e)
         {
-            lbl_subtitulo.Text = "Editar Empleador";
-            panel_Empleador_Editar.Visible = true;
-            panel_empleado_agregar.Visible = false;
-            panel_empleador_agregar.Visible = false;
-            panel_empleado_editar.Visible = false;
+            panel_central.Controls.Clear();
+            this.panel_central.Controls.Add(form_empleadores_editar);
+            form_empleadores_editar.Show();
         }
 
         private void Btn_editarEmpleados_Click(object sender, EventArgs e)
         {
-            lbl_subtitulo.Text = "Editar Empleador";
-            panel_Empleador_Editar.Visible = false;
-            panel_empleado_agregar.Visible = false;
-            panel_empleador_agregar.Visible = false;
-            panel_empleado_editar.Visible = true;
+            panel_central.Controls.Clear();
+            this.panel_central.Controls.Add(form_empleados_editar);
+            form_empleados_editar.Show();
         }
     }
 }

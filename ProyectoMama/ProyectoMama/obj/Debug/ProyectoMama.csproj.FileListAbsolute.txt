@@ -3,10 +3,14 @@ C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\bin\Debug
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\bin\Debug\ProyectoMama.pdb
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.csprojAssemblyReference.cache
-C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form1.resources
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Properties.Resources.resources
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.csproj.GenerateResource.cache
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.csproj.CoreCompileInputs.cache
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.csproj.CopyComplete
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.exe
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.pdb
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.FormPrincipal.resources
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleadores_Editar.resources
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleadores_Agregar.resources
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleados_Agregar.resources
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleados_Editar.resources
