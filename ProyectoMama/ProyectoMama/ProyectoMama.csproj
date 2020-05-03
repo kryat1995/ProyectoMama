@@ -86,6 +86,18 @@
     <Compile Include="forms\Form_Empleados_Editar.Designer.cs">
       <DependentUpon>Form_Empleados_Editar.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Form_Empleadores_Listar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Empleadores_Listar.Designer.cs">
+      <DependentUpon>Form_Empleadores_Listar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_Empleados_Listar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_Empleados_Listar.Designer.cs">
+      <DependentUpon>Form_Empleados_Listar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\FormPrincipal.resx">
@@ -102,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_Empleados_Editar.resx">
       <DependentUpon>Form_Empleados_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Empleadores_Listar.resx">
+      <DependentUpon>Form_Empleadores_Listar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_Empleados_Listar.resx">
+      <DependentUpon>Form_Empleados_Listar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

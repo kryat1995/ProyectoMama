@@ -17,6 +17,8 @@ namespace ProyectoMama
         Form_Empleadores_Editar form_empleadores_editar = new Form_Empleadores_Editar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
         Form_Empleados_Agregar form_empleados_agregar = new Form_Empleados_Agregar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
         Form_Empleados_Editar form_empleados_editar = new Form_Empleados_Editar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Form_Empleadores_Listar form_empleadores_listar = new Form_Empleadores_Listar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Form_Empleados_Listar form_empleados_listar = new Form_Empleados_Listar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
 
         public FormPrincipal()
         {
@@ -127,6 +129,20 @@ namespace ProyectoMama
             panel_central.Controls.Clear();
             this.panel_central.Controls.Add(form_empleados_editar);
             form_empleados_editar.Show();
+        }
+
+        private void Btn_listarEmpleador_Click(object sender, EventArgs e)
+        {
+            panel_central.Controls.Clear();
+            this.panel_central.Controls.Add(form_empleadores_listar);
+            form_empleadores_listar.Show();
+        }
+
+        private void Btn_listarEmpleados_Click(object sender, EventArgs e)
+        {
+            panel_central.Controls.Clear();
+            this.panel_central.Controls.Add(form_empleados_listar);
+            form_empleados_listar.Show();
         }
     }
 }

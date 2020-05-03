@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panel_menuTop = new System.Windows.Forms.Panel();
             this.minimizar = new System.Windows.Forms.Button();
@@ -225,6 +225,7 @@
             this.btn_listarEmpleados.Text = "LISTAR";
             this.btn_listarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_listarEmpleados.UseVisualStyleBackColor = true;
+            this.btn_listarEmpleados.Click += new System.EventHandler(this.Btn_listarEmpleados_Click);
             // 
             // btn_editarEmpleados
             // 
@@ -353,6 +354,7 @@
             this.btn_listarEmpleador.Text = "LISTAR";
             this.btn_listarEmpleador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_listarEmpleador.UseVisualStyleBackColor = true;
+            this.btn_listarEmpleador.Click += new System.EventHandler(this.Btn_listarEmpleador_Click);
             // 
             // btn_editarEmpleador
             // 
@@ -521,28 +523,6 @@
             // 
             this.transition_sidebarCerrar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transition_sidebarCerrar.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 1F;
-            this.transition_sidebarCerrar.DefaultAnimation = animation4;
-            this.transition_sidebarCerrar.Interval = 15;
-            // 
-            // transition_sidebarAbrir
-            // 
-            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.transition_sidebarAbrir.Cursor = null;
             animation3.AnimateOnlyDifferences = true;
             animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
             animation3.LeafCoeff = 0F;
@@ -557,8 +537,30 @@
             animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
             animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
             animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.transition_sidebarAbrir.DefaultAnimation = animation3;
+            animation3.TransparencyCoeff = 1F;
+            this.transition_sidebarCerrar.DefaultAnimation = animation3;
+            this.transition_sidebarCerrar.Interval = 15;
+            // 
+            // transition_sidebarAbrir
+            // 
+            this.transition_sidebarAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transition_sidebarAbrir.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.transition_sidebarAbrir.DefaultAnimation = animation4;
             this.transition_sidebarAbrir.Interval = 15;
             // 
             // MoverVentana

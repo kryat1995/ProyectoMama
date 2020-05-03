@@ -14,3 +14,5 @@ C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleadores_Agregar.resources
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleados_Agregar.resources
 C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleados_Editar.resources
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleadores_Listar.resources
+C:\Users\jorge\OneDrive\Desktop\ProyectoMama\ProyectoMama\ProyectoMama\obj\Debug\ProyectoMama.Form_Empleados_Listar.resources
