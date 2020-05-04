@@ -20,9 +20,9 @@ namespace ProyectoMama.Clases
             return ds.Tables[Nombre];
         }
 
-        public DataTable ObtenerTodoLocalidades()
+        public DataTable ObtenerLocalidadPorProvincia(string idprov_)
         {
-            return ObtenerTabla("Categorías", "Select * from Localidades");
+            return ObtenerTabla("Localidades", "Select * from Localidades where IDProvincia_loc = " + idprov_);
         }
     }
 }

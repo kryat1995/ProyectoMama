@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Empleadores_Agregar));
             this.panel_empleador_agregar = new System.Windows.Forms.Panel();
+            this.cmb_localidades = new System.Windows.Forms.ComboBox();
+            this.cmb_provincias = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.lbl_subtitulo = new System.Windows.Forms.Label();
             this.txt_razonSocial = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -41,18 +43,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_empleadorPanelDdlLoc = new System.Windows.Forms.Panel();
-            this.ddl_localidad = new Bunifu.Framework.UI.BunifuDropdown();
-            this.panel_empleadorDdlProv = new System.Windows.Forms.Panel();
-            this.ddl_provincia = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel_empleador_agregar.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            this.panel_empleadorPanelDdlLoc.SuspendLayout();
-            this.panel_empleadorDdlProv.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_empleador_agregar
             // 
+            this.panel_empleador_agregar.Controls.Add(this.cmb_localidades);
+            this.panel_empleador_agregar.Controls.Add(this.cmb_provincias);
             this.panel_empleador_agregar.Controls.Add(this.bunifuGradientPanel1);
             this.panel_empleador_agregar.Controls.Add(this.txt_razonSocial);
             this.panel_empleador_agregar.Controls.Add(this.txt_cuit);
@@ -63,13 +61,42 @@
             this.panel_empleador_agregar.Controls.Add(this.label3);
             this.panel_empleador_agregar.Controls.Add(this.label2);
             this.panel_empleador_agregar.Controls.Add(this.label1);
-            this.panel_empleador_agregar.Controls.Add(this.panel_empleadorPanelDdlLoc);
-            this.panel_empleador_agregar.Controls.Add(this.panel_empleadorDdlProv);
             this.panel_empleador_agregar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_empleador_agregar.Location = new System.Drawing.Point(0, 0);
             this.panel_empleador_agregar.Name = "panel_empleador_agregar";
             this.panel_empleador_agregar.Size = new System.Drawing.Size(740, 600);
             this.panel_empleador_agregar.TabIndex = 2;
+            // 
+            // cmb_localidades
+            // 
+            this.cmb_localidades.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.cmb_localidades.DropDownHeight = 150;
+            this.cmb_localidades.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_localidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_localidades.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_localidades.ForeColor = System.Drawing.Color.White;
+            this.cmb_localidades.FormattingEnabled = true;
+            this.cmb_localidades.IntegralHeight = false;
+            this.cmb_localidades.Location = new System.Drawing.Point(232, 253);
+            this.cmb_localidades.Name = "cmb_localidades";
+            this.cmb_localidades.Size = new System.Drawing.Size(258, 29);
+            this.cmb_localidades.TabIndex = 17;
+            // 
+            // cmb_provincias
+            // 
+            this.cmb_provincias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.cmb_provincias.DropDownHeight = 150;
+            this.cmb_provincias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_provincias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_provincias.Font = new System.Drawing.Font("Poppins Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_provincias.ForeColor = System.Drawing.Color.White;
+            this.cmb_provincias.FormattingEnabled = true;
+            this.cmb_provincias.IntegralHeight = false;
+            this.cmb_provincias.Location = new System.Drawing.Point(232, 218);
+            this.cmb_provincias.Name = "cmb_provincias";
+            this.cmb_provincias.Size = new System.Drawing.Size(258, 29);
+            this.cmb_provincias.TabIndex = 16;
+            this.cmb_provincias.SelectedIndexChanged += new System.EventHandler(this.Cmb_provincias_SelectedIndexChanged);
             // 
             // bunifuGradientPanel1
             // 
@@ -172,7 +199,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label5.Location = new System.Drawing.Point(131, 275);
+            this.label5.Location = new System.Drawing.Point(130, 257);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 25);
             this.label5.TabIndex = 10;
@@ -185,7 +212,7 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.label4.Location = new System.Drawing.Point(130, 228);
+            this.label4.Location = new System.Drawing.Point(131, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 25);
             this.label4.TabIndex = 9;
@@ -229,56 +256,6 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Razon Social: ";
             // 
-            // panel_empleadorPanelDdlLoc
-            // 
-            this.panel_empleadorPanelDdlLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.panel_empleadorPanelDdlLoc.Controls.Add(this.ddl_localidad);
-            this.panel_empleadorPanelDdlLoc.Location = new System.Drawing.Point(235, 266);
-            this.panel_empleadorPanelDdlLoc.Name = "panel_empleadorPanelDdlLoc";
-            this.panel_empleadorPanelDdlLoc.Size = new System.Drawing.Size(253, 45);
-            this.panel_empleadorPanelDdlLoc.TabIndex = 5;
-            // 
-            // ddl_localidad
-            // 
-            this.ddl_localidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_localidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ddl_localidad.BorderRadius = 0;
-            this.ddl_localidad.DisabledColor = System.Drawing.SystemColors.GrayText;
-            this.ddl_localidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_localidad.Items = new string[0];
-            this.ddl_localidad.Location = new System.Drawing.Point(3, 3);
-            this.ddl_localidad.Name = "ddl_localidad";
-            this.ddl_localidad.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_localidad.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_localidad.selectedIndex = -1;
-            this.ddl_localidad.Size = new System.Drawing.Size(248, 40);
-            this.ddl_localidad.TabIndex = 3;
-            // 
-            // panel_empleadorDdlProv
-            // 
-            this.panel_empleadorDdlProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.panel_empleadorDdlProv.Controls.Add(this.ddl_provincia);
-            this.panel_empleadorDdlProv.Location = new System.Drawing.Point(235, 218);
-            this.panel_empleadorDdlProv.Name = "panel_empleadorDdlProv";
-            this.panel_empleadorDdlProv.Size = new System.Drawing.Size(253, 45);
-            this.panel_empleadorDdlProv.TabIndex = 4;
-            // 
-            // ddl_provincia
-            // 
-            this.ddl_provincia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_provincia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ddl_provincia.BorderRadius = 0;
-            this.ddl_provincia.DisabledColor = System.Drawing.SystemColors.GrayText;
-            this.ddl_provincia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
-            this.ddl_provincia.Items = new string[0];
-            this.ddl_provincia.Location = new System.Drawing.Point(3, 3);
-            this.ddl_provincia.Name = "ddl_provincia";
-            this.ddl_provincia.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_provincia.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ddl_provincia.selectedIndex = -1;
-            this.ddl_provincia.Size = new System.Drawing.Size(248, 40);
-            this.ddl_provincia.TabIndex = 3;
-            // 
             // Form_Empleadores_Agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,12 +267,11 @@
             this.Name = "Form_Empleadores_Agregar";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form_Empledores_Agregar";
+            this.Load += new System.EventHandler(this.Form_Empleadores_Agregar_Load);
             this.panel_empleador_agregar.ResumeLayout(false);
             this.panel_empleador_agregar.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            this.panel_empleadorPanelDdlLoc.ResumeLayout(false);
-            this.panel_empleadorDdlProv.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -309,14 +285,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel_empleadorPanelDdlLoc;
-        private Bunifu.Framework.UI.BunifuDropdown ddl_localidad;
-        private System.Windows.Forms.Panel panel_empleadorDdlProv;
-        private Bunifu.Framework.UI.BunifuDropdown ddl_provincia;
         private Bunifu.Framework.UI.BunifuMetroTextbox txt_razonSocial;
         private Bunifu.Framework.UI.BunifuMetroTextbox txt_cuit;
         private Bunifu.Framework.UI.BunifuMetroTextbox txt_domicilio;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label lbl_subtitulo;
+        private System.Windows.Forms.ComboBox cmb_provincias;
+        private System.Windows.Forms.ComboBox cmb_localidades;
     }
 }

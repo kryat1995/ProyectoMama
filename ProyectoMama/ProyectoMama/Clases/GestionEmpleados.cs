@@ -22,7 +22,7 @@ namespace ProyectoMama.Clases
 
         public DataTable ObtenerNombreCategoria()
         {
-            return ObtenerTabla("Categorías", "Select NombreCategoría from Empleados");
+            return ObtenerTabla("Empleados", "Select * from Empleados");
         }
     }
 }

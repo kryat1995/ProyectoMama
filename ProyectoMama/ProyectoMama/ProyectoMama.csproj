@@ -98,6 +98,7 @@
     <Compile Include="forms\Form_Empleados_Listar.Designer.cs">
       <DependentUpon>Form_Empleados_Listar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\GestionEmpxemp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\FormPrincipal.resx">

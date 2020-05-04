@@ -20,10 +20,9 @@ namespace ProyectoMama.Clases
             return ds.Tables[Nombre];
         }
 
-        public DataTable ObtenerEmpleadores()
+        public DataTable ObtenerNombreCategoria()
         {
-            return ObtenerTabla("Empleadores", "Select * from Empleadores");
+            return ObtenerTabla("Categorías", "Select NombreCategoría from Empleadores");
         }
-
     }
 }

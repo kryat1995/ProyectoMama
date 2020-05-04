@@ -22,7 +22,7 @@ namespace ProyectoMama.Clases
 
         public DataTable ObtenerTodoProvincias()
         {
-            return ObtenerTabla("Categorías", "Select * from Provincias");
+            return ObtenerTabla("Provincias", "Select * from Provincias");
         }
     }
 }

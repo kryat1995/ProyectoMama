@@ -8,7 +8,7 @@ using System.Data;
 
 namespace ProyectoMama.Clases
 {
-    class GestionEmpleadores
+    class GestionEmpleados
     {
         private DataTable ObtenerTabla(String Nombre, String Sql)
         {
@@ -20,10 +20,9 @@ namespace ProyectoMama.Clases
             return ds.Tables[Nombre];
         }
 
-        public DataTable ObtenerEmpleadores()
+        public DataTable ObtenerNombreCategoria()
         {
-            return ObtenerTabla("Empleadores", "Select * from Empleadores");
+            return ObtenerTabla("Categorías", "Select NombreCategoría from Empleados");
         }
-
     }
 }

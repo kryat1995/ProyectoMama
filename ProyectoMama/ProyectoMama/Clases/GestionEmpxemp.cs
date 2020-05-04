@@ -8,7 +8,7 @@ using System.Data;
 
 namespace ProyectoMama.Clases
 {
-    class GestionEmpleadores
+    class GestionEmpxemp
     {
         private DataTable ObtenerTabla(String Nombre, String Sql)
         {
@@ -16,14 +16,12 @@ namespace ProyectoMama.Clases
             AccesoDatos datos = new AccesoDatos();
             SqlDataAdapter adp = datos.ObtenerAdaptador(Sql);
             adp.Fill(ds, Nombre);
-
             return ds.Tables[Nombre];
         }
 
-        public DataTable ObtenerEmpleadores()
+        public DataTable ObtenerTablaEntera()
         {
-            return ObtenerTabla("Empleadores", "Select * from Empleadores");
+            return ObtenerTabla("EmpXEmp", "Select * from EmpXEmp");
         }
-
     }
 }
