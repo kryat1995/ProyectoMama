@@ -69,5 +69,26 @@ namespace ProyectoMama
 
             }
         }
+
+        private void Btn_confirmar_Click(object sender, EventArgs e)
+        {
+            Empleadores emp = new Empleadores();
+            emp.set_razonSocial(txt_razonSocial.Text);
+            emp.set_domicilio(txt_domicilio.Text);
+            emp.set_cuit(txt_cuit.Text);
+
+            string idp_ = "0";
+
+            if (cmb_provincias.SelectedValue.ToString().Length == 1)
+                idp_ += cmb_provincias.SelectedValue.ToString();
+            else
+                idp_ = cmb_provincias.SelectedValue.ToString();
+
+            emp.set_idprovincia(idp_);
+            emp.set_idlocalidad(cmb_localidades.SelectedValue.ToString());
+
+
+
+        }
     }
 }

@@ -53,5 +53,22 @@ namespace ProyectoMama.Clases
                 return null;
             }
         }
+
+        public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
+        {
+            int FilasCambiadas;
+
+            SqlConnection conexion = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand();
+            cmd = Comando;
+            cmd.Connection = conexion;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = NombreSP;
+            FilasCambiadas = cmd.ExecuteNonQuery();
+            conexion.Close();
+
+            return FilasCambiadas;
+        }
+
     }
 }

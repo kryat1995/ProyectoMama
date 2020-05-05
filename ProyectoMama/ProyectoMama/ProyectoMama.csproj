@@ -56,6 +56,8 @@
     <Compile Include="Clases\GestionEmpleados.cs" />
     <Compile Include="Clases\GestionLocalidades.cs" />
     <Compile Include="Clases\GestionProvincias.cs" />
+    <Compile Include="Clases\Empleadores.cs" />
+    <Compile Include="Clases\Empleados.cs" />
     <Compile Include="forms\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
